@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF4010DC20066BEC00A4D004 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AF4010D720066BEC00A4D004 /* libWeChatSDK.a */; };
+		AF4010DD20066BEC00A4D004 /* WechatAuthSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = AF4010D920066BEC00A4D004 /* WechatAuthSDK.h */; };
+		AF4010DE20066BEC00A4D004 /* WXApi.h in Headers */ = {isa = PBXBuildFile; fileRef = AF4010DA20066BEC00A4D004 /* WXApi.h */; };
+		AF4010DF20066BEC00A4D004 /* WXApiObject.h in Headers */ = {isa = PBXBuildFile; fileRef = AF4010DB20066BEC00A4D004 /* WXApiObject.h */; };
 		AFF3502D2005B51300807E17 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFF3502C2005B51300807E17 /* Foundation.framework */; };
 		AFF3502F2005B51300807E17 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFF3502E2005B51300807E17 /* CoreFoundation.framework */; };
 		AFF350312005B51300807E17 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFF350302005B51300807E17 /* UIKit.framework */; };
@@ -24,6 +28,18 @@
 		AFF350492005B51300807E17 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFF350482005B51300807E17 /* Security.framework */; };
 		AFF350582005B51300807E17 /* wmpayane.h in Headers */ = {isa = PBXBuildFile; fileRef = AFF350572005B51300807E17 /* wmpayane.h */; };
 		AFF3505A2005B51300807E17 /* wmpayane.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF350592005B51300807E17 /* wmpayane.m */; };
+		AFF3510E2005C2A700807E17 /* APRSASigner.h in Headers */ = {isa = PBXBuildFile; fileRef = AFF350BC2005C2A700807E17 /* APRSASigner.h */; };
+		AFF3510F2005C2A700807E17 /* APRSASigner.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF350BD2005C2A700807E17 /* APRSASigner.m */; };
+		AFF351102005C2A700807E17 /* openssl_wrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = AFF350BE2005C2A700807E17 /* openssl_wrapper.h */; };
+		AFF351112005C2A700807E17 /* openssl_wrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF350BF2005C2A700807E17 /* openssl_wrapper.m */; };
+		AFF351172005F07D00807E17 /* ANEExtensionFunc.h in Headers */ = {isa = PBXBuildFile; fileRef = AFF351132005F07D00807E17 /* ANEExtensionFunc.h */; };
+		AFF351182005F07D00807E17 /* ANEExtensionFunc.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF351142005F07D00807E17 /* ANEExtensionFunc.m */; };
+		AFF351192005F07D00807E17 /* ANETypeConversion.h in Headers */ = {isa = PBXBuildFile; fileRef = AFF351152005F07D00807E17 /* ANETypeConversion.h */; };
+		AFF3511A2005F07D00807E17 /* ANETypeConversion.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF351162005F07D00807E17 /* ANETypeConversion.m */; };
+		AFF3511C2005F67800807E17 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFF3511B2005F67700807E17 /* CoreMotion.framework */; };
+		AFF3511E2005F68400807E17 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFF3511D2005F68400807E17 /* CoreTelephony.framework */; };
+		AFF351202005F69400807E17 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFF3511F2005F69300807E17 /* CoreText.framework */; };
+		AFF351422006269F00807E17 /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFF351412006269F00807E17 /* AlipaySDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +60,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AF4010D720066BEC00A4D004 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		AF4010D820066BEC00A4D004 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		AF4010D920066BEC00A4D004 /* WechatAuthSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
+		AF4010DA20066BEC00A4D004 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		AF4010DB20066BEC00A4D004 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
 		AFF350292005B51300807E17 /* libwmpayane.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libwmpayane.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFF3502C2005B51300807E17 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AFF3502E2005B51300807E17 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
@@ -69,6 +90,21 @@
 		AFF3505C2005B51300807E17 /* platformoptions.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = platformoptions.xml; sourceTree = "<group>"; };
 		AFF3505D2005B51300807E17 /* generateANE.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = generateANE.sh; sourceTree = "<group>"; };
 		AFF3505E2005B51300807E17 /* debugIPA.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = debugIPA.sh; sourceTree = "<group>"; };
+		AFF3506B2005C2A700807E17 /* AlipaySDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AlipaySDK.bundle; sourceTree = "<group>"; };
+		AFF350BC2005C2A700807E17 /* APRSASigner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APRSASigner.h; sourceTree = "<group>"; };
+		AFF350BD2005C2A700807E17 /* APRSASigner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APRSASigner.m; sourceTree = "<group>"; };
+		AFF350BE2005C2A700807E17 /* openssl_wrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = openssl_wrapper.h; sourceTree = "<group>"; };
+		AFF350BF2005C2A700807E17 /* openssl_wrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = openssl_wrapper.m; sourceTree = "<group>"; };
+		AFF351132005F07D00807E17 /* ANEExtensionFunc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANEExtensionFunc.h; sourceTree = "<group>"; };
+		AFF351142005F07D00807E17 /* ANEExtensionFunc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANEExtensionFunc.m; sourceTree = "<group>"; };
+		AFF351152005F07D00807E17 /* ANETypeConversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANETypeConversion.h; sourceTree = "<group>"; };
+		AFF351162005F07D00807E17 /* ANETypeConversion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANETypeConversion.m; sourceTree = "<group>"; };
+		AFF3511B2005F67700807E17 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		AFF3511D2005F68400807E17 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		AFF3511F2005F69300807E17 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		AFF351212005F6A200807E17 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		AFF351232005F6AD00807E17 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		AFF351412006269F00807E17 /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlipaySDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +112,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFF351202005F69400807E17 /* CoreText.framework in Frameworks */,
+				AFF3511E2005F68400807E17 /* CoreTelephony.framework in Frameworks */,
+				AFF3511C2005F67800807E17 /* CoreMotion.framework in Frameworks */,
 				AFF350432005B51300807E17 /* CoreMedia.framework in Frameworks */,
 				AFF350492005B51300807E17 /* Security.framework in Frameworks */,
 				AFF3502F2005B51300807E17 /* CoreFoundation.framework in Frameworks */,
@@ -85,7 +124,9 @@
 				AFF3503B2005B51300807E17 /* CFNetwork.framework in Frameworks */,
 				AFF350312005B51300807E17 /* UIKit.framework in Frameworks */,
 				AFF350352005B51300807E17 /* CoreGraphics.framework in Frameworks */,
+				AFF351422006269F00807E17 /* AlipaySDK.framework in Frameworks */,
 				AFF3503F2005B51300807E17 /* OpenGLES.framework in Frameworks */,
+				AF4010DC20066BEC00A4D004 /* libWeChatSDK.a in Frameworks */,
 				AFF350392005B51300807E17 /* AudioToolbox.framework in Frameworks */,
 				AFF350372005B51300807E17 /* SystemConfiguration.framework in Frameworks */,
 				AFF3502D2005B51300807E17 /* Foundation.framework in Frameworks */,
@@ -97,6 +138,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AF4010D620066BEC00A4D004 /* WechatSDK1.8.2 */ = {
+			isa = PBXGroup;
+			children = (
+				AF4010D720066BEC00A4D004 /* libWeChatSDK.a */,
+				AF4010D820066BEC00A4D004 /* README.txt */,
+				AF4010D920066BEC00A4D004 /* WechatAuthSDK.h */,
+				AF4010DA20066BEC00A4D004 /* WXApi.h */,
+				AF4010DB20066BEC00A4D004 /* WXApiObject.h */,
+			);
+			path = WechatSDK1.8.2;
+			sourceTree = "<group>";
+		};
 		AFF350202005B51200807E17 = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +172,11 @@
 		AFF3502B2005B51300807E17 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AFF351232005F6AD00807E17 /* libc++.tbd */,
+				AFF351212005F6A200807E17 /* libz.tbd */,
+				AFF3511F2005F69300807E17 /* CoreText.framework */,
+				AFF3511D2005F68400807E17 /* CoreTelephony.framework */,
+				AFF3511B2005F67700807E17 /* CoreMotion.framework */,
 				AFF3502C2005B51300807E17 /* Foundation.framework */,
 				AFF3502E2005B51300807E17 /* CoreFoundation.framework */,
 				AFF350302005B51300807E17 /* UIKit.framework */,
@@ -141,6 +199,9 @@
 		AFF350542005B51300807E17 /* wmpayane */ = {
 			isa = PBXGroup;
 			children = (
+				AF4010D620066BEC00A4D004 /* WechatSDK1.8.2 */,
+				AFF351122005F07D00807E17 /* ANEHelper */,
+				AFF3506A2005C2A700807E17 /* alipay */,
 				AFF350572005B51300807E17 /* wmpayane.h */,
 				AFF350592005B51300807E17 /* wmpayane.m */,
 				AFF350552005B51300807E17 /* Supporting Files */,
@@ -160,6 +221,38 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		AFF3506A2005C2A700807E17 /* alipay */ = {
+			isa = PBXGroup;
+			children = (
+				AFF351412006269F00807E17 /* AlipaySDK.framework */,
+				AFF3506B2005C2A700807E17 /* AlipaySDK.bundle */,
+				AFF350BB2005C2A700807E17 /* Utils */,
+			);
+			path = alipay;
+			sourceTree = "<group>";
+		};
+		AFF350BB2005C2A700807E17 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				AFF350BC2005C2A700807E17 /* APRSASigner.h */,
+				AFF350BD2005C2A700807E17 /* APRSASigner.m */,
+				AFF350BE2005C2A700807E17 /* openssl_wrapper.h */,
+				AFF350BF2005C2A700807E17 /* openssl_wrapper.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		AFF351122005F07D00807E17 /* ANEHelper */ = {
+			isa = PBXGroup;
+			children = (
+				AFF351132005F07D00807E17 /* ANEExtensionFunc.h */,
+				AFF351142005F07D00807E17 /* ANEExtensionFunc.m */,
+				AFF351152005F07D00807E17 /* ANETypeConversion.h */,
+				AFF351162005F07D00807E17 /* ANETypeConversion.m */,
+			);
+			path = ANEHelper;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -167,7 +260,14 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFF351192005F07D00807E17 /* ANETypeConversion.h in Headers */,
+				AFF3510E2005C2A700807E17 /* APRSASigner.h in Headers */,
+				AF4010DE20066BEC00A4D004 /* WXApi.h in Headers */,
+				AF4010DF20066BEC00A4D004 /* WXApiObject.h in Headers */,
+				AFF351172005F07D00807E17 /* ANEExtensionFunc.h in Headers */,
+				AFF351102005C2A700807E17 /* openssl_wrapper.h in Headers */,
 				AFF350582005B51300807E17 /* wmpayane.h in Headers */,
+				AF4010DD20066BEC00A4D004 /* WechatAuthSDK.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,7 +398,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFF3511A2005F07D00807E17 /* ANETypeConversion.m in Sources */,
 				AFF3505A2005B51300807E17 /* wmpayane.m in Sources */,
+				AFF3510F2005C2A700807E17 /* APRSASigner.m in Sources */,
+				AFF351182005F07D00807E17 /* ANEExtensionFunc.m in Sources */,
+				AFF351112005C2A700807E17 /* openssl_wrapper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,12 +475,36 @@
 		AFF350622005B51300807E17 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7DUX67X748;
 				DSTROOT = /tmp/wmpayane.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/wmpayane/alipay",
+					"$(PROJECT_DIR)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "wmpayane/wmpayane-Prefix.pch";
-				OTHER_LDFLAGS = "-ObjC";
+				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/wmpayane/alipay",
+					"$(PROJECT_DIR)/wmpayane/alipay/openssl",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/wmpayane/alipay",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/wmpayane/WechatSDK1.8.2",
+				);
+				OTHER_LDFLAGS = (
+					"-Objc",
+					"-lz",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -385,12 +513,36 @@
 		AFF350632005B51300807E17 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7DUX67X748;
 				DSTROOT = /tmp/wmpayane.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/wmpayane/alipay",
+					"$(PROJECT_DIR)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "wmpayane/wmpayane-Prefix.pch";
-				OTHER_LDFLAGS = "-ObjC";
+				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/wmpayane/alipay",
+					"$(PROJECT_DIR)/wmpayane/alipay/openssl",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/wmpayane/alipay",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/wmpayane/WechatSDK1.8.2",
+				);
+				OTHER_LDFLAGS = (
+					"-Objc",
+					"-lz",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -404,7 +556,13 @@
 				DEVELOPMENT_TEAM = 7DUX67X748;
 				EXECUTABLE_EXTENSION = ane;
 				EXECUTABLE_PREFIX = "";
+				GCC_VERSION = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				NATIVEEXTENSION_SWC = /;
+				OTHER_LDFLAGS = (
+					"-Objc",
+					"-lz",
+				);
 				PRODUCT_NAME = wmpayane;
 			};
 			name = Debug;
@@ -417,7 +575,13 @@
 				DEVELOPMENT_TEAM = 7DUX67X748;
 				EXECUTABLE_EXTENSION = ane;
 				EXECUTABLE_PREFIX = "";
+				GCC_VERSION = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				NATIVEEXTENSION_SWC = /;
+				OTHER_LDFLAGS = (
+					"-Objc",
+					"-lz",
+				);
 				PRODUCT_NAME = wmpayane;
 			};
 			name = Release;
@@ -428,6 +592,7 @@
 				AIR_SDK_PATH = "/Users/wuyj/youjian.wu/common-lib/AIRSDK";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7DUX67X748;
+				GCC_VERSION = "";
 				NATIVEEXTENSION_SWC = /;
 				PRODUCT_NAME = DebugwmpayaneAIRApp;
 			};
@@ -439,6 +604,7 @@
 				AIR_SDK_PATH = "/Users/wuyj/youjian.wu/common-lib/AIRSDK";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7DUX67X748;
+				GCC_VERSION = "";
 				NATIVEEXTENSION_SWC = /;
 				PRODUCT_NAME = DebugwmpayaneAIRApp;
 			};

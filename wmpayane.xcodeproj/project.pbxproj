@@ -1,0 +1,489 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AFF3502D2005B51300807E17 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFF3502C2005B51300807E17 /* Foundation.framework */; };
+		AFF3502F2005B51300807E17 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFF3502E2005B51300807E17 /* CoreFoundation.framework */; };
+		AFF350312005B51300807E17 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFF350302005B51300807E17 /* UIKit.framework */; };
+		AFF350332005B51300807E17 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFF350322005B51300807E17 /* MobileCoreServices.framework */; };
+		AFF350352005B51300807E17 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFF350342005B51300807E17 /* CoreGraphics.framework */; };
+		AFF350372005B51300807E17 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFF350362005B51300807E17 /* SystemConfiguration.framework */; };
+		AFF350392005B51300807E17 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFF350382005B51300807E17 /* AudioToolbox.framework */; };
+		AFF3503B2005B51300807E17 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFF3503A2005B51300807E17 /* CFNetwork.framework */; };
+		AFF3503D2005B51300807E17 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFF3503C2005B51300807E17 /* QuartzCore.framework */; };
+		AFF3503F2005B51300807E17 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFF3503E2005B51300807E17 /* OpenGLES.framework */; };
+		AFF350412005B51300807E17 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFF350402005B51300807E17 /* CoreLocation.framework */; };
+		AFF350432005B51300807E17 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFF350422005B51300807E17 /* CoreMedia.framework */; };
+		AFF350452005B51300807E17 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFF350442005B51300807E17 /* CoreVideo.framework */; };
+		AFF350472005B51300807E17 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFF350462005B51300807E17 /* AVFoundation.framework */; };
+		AFF350492005B51300807E17 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFF350482005B51300807E17 /* Security.framework */; };
+		AFF350582005B51300807E17 /* wmpayane.h in Headers */ = {isa = PBXBuildFile; fileRef = AFF350572005B51300807E17 /* wmpayane.h */; };
+		AFF3505A2005B51300807E17 /* wmpayane.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF350592005B51300807E17 /* wmpayane.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AFF350502005B51300807E17 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFF350212005B51200807E17 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFF350282005B51300807E17;
+			remoteInfo = wmpayane;
+		};
+		AFF350522005B51300807E17 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFF350212005B51200807E17 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFF3504B2005B51300807E17;
+			remoteInfo = wmpayane.ane;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AFF350292005B51300807E17 /* libwmpayane.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libwmpayane.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFF3502C2005B51300807E17 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AFF3502E2005B51300807E17 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		AFF350302005B51300807E17 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AFF350322005B51300807E17 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		AFF350342005B51300807E17 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AFF350362005B51300807E17 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		AFF350382005B51300807E17 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		AFF3503A2005B51300807E17 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		AFF3503C2005B51300807E17 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		AFF3503E2005B51300807E17 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		AFF350402005B51300807E17 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		AFF350422005B51300807E17 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		AFF350442005B51300807E17 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		AFF350462005B51300807E17 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		AFF350482005B51300807E17 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		AFF3504C2005B51300807E17 /* wmpayane.ane */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = wmpayane.ane; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFF3504F2005B51300807E17 /* DebugwmpayaneAIRApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DebugwmpayaneAIRApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFF350562005B51300807E17 /* wmpayane-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wmpayane-Prefix.pch"; sourceTree = "<group>"; };
+		AFF350572005B51300807E17 /* wmpayane.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = wmpayane.h; sourceTree = "<group>"; };
+		AFF350592005B51300807E17 /* wmpayane.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = wmpayane.m; sourceTree = "<group>"; };
+		AFF3505B2005B51300807E17 /* extension.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = extension.xml; sourceTree = "<group>"; };
+		AFF3505C2005B51300807E17 /* platformoptions.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = platformoptions.xml; sourceTree = "<group>"; };
+		AFF3505D2005B51300807E17 /* generateANE.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = generateANE.sh; sourceTree = "<group>"; };
+		AFF3505E2005B51300807E17 /* debugIPA.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = debugIPA.sh; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AFF350262005B51300807E17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFF350432005B51300807E17 /* CoreMedia.framework in Frameworks */,
+				AFF350492005B51300807E17 /* Security.framework in Frameworks */,
+				AFF3502F2005B51300807E17 /* CoreFoundation.framework in Frameworks */,
+				AFF350412005B51300807E17 /* CoreLocation.framework in Frameworks */,
+				AFF350332005B51300807E17 /* MobileCoreServices.framework in Frameworks */,
+				AFF350452005B51300807E17 /* CoreVideo.framework in Frameworks */,
+				AFF3503B2005B51300807E17 /* CFNetwork.framework in Frameworks */,
+				AFF350312005B51300807E17 /* UIKit.framework in Frameworks */,
+				AFF350352005B51300807E17 /* CoreGraphics.framework in Frameworks */,
+				AFF3503F2005B51300807E17 /* OpenGLES.framework in Frameworks */,
+				AFF350392005B51300807E17 /* AudioToolbox.framework in Frameworks */,
+				AFF350372005B51300807E17 /* SystemConfiguration.framework in Frameworks */,
+				AFF3502D2005B51300807E17 /* Foundation.framework in Frameworks */,
+				AFF350472005B51300807E17 /* AVFoundation.framework in Frameworks */,
+				AFF3503D2005B51300807E17 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AFF350202005B51200807E17 = {
+			isa = PBXGroup;
+			children = (
+				AFF350542005B51300807E17 /* wmpayane */,
+				AFF3502B2005B51300807E17 /* Frameworks */,
+				AFF3502A2005B51300807E17 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AFF3502A2005B51300807E17 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AFF350292005B51300807E17 /* libwmpayane.a */,
+				AFF3504C2005B51300807E17 /* wmpayane.ane */,
+				AFF3504F2005B51300807E17 /* DebugwmpayaneAIRApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AFF3502B2005B51300807E17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AFF3502C2005B51300807E17 /* Foundation.framework */,
+				AFF3502E2005B51300807E17 /* CoreFoundation.framework */,
+				AFF350302005B51300807E17 /* UIKit.framework */,
+				AFF350322005B51300807E17 /* MobileCoreServices.framework */,
+				AFF350342005B51300807E17 /* CoreGraphics.framework */,
+				AFF350362005B51300807E17 /* SystemConfiguration.framework */,
+				AFF350382005B51300807E17 /* AudioToolbox.framework */,
+				AFF3503A2005B51300807E17 /* CFNetwork.framework */,
+				AFF3503C2005B51300807E17 /* QuartzCore.framework */,
+				AFF3503E2005B51300807E17 /* OpenGLES.framework */,
+				AFF350402005B51300807E17 /* CoreLocation.framework */,
+				AFF350422005B51300807E17 /* CoreMedia.framework */,
+				AFF350442005B51300807E17 /* CoreVideo.framework */,
+				AFF350462005B51300807E17 /* AVFoundation.framework */,
+				AFF350482005B51300807E17 /* Security.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AFF350542005B51300807E17 /* wmpayane */ = {
+			isa = PBXGroup;
+			children = (
+				AFF350572005B51300807E17 /* wmpayane.h */,
+				AFF350592005B51300807E17 /* wmpayane.m */,
+				AFF350552005B51300807E17 /* Supporting Files */,
+			);
+			path = wmpayane;
+			sourceTree = "<group>";
+		};
+		AFF350552005B51300807E17 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AFF350562005B51300807E17 /* wmpayane-Prefix.pch */,
+				AFF3505B2005B51300807E17 /* extension.xml */,
+				AFF3505C2005B51300807E17 /* platformoptions.xml */,
+				AFF3505D2005B51300807E17 /* generateANE.sh */,
+				AFF3505E2005B51300807E17 /* debugIPA.sh */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		AFF350272005B51300807E17 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFF350582005B51300807E17 /* wmpayane.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		AFF350282005B51300807E17 /* wmpayane */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFF350612005B51300807E17 /* Build configuration list for PBXNativeTarget "wmpayane" */;
+			buildPhases = (
+				AFF350252005B51300807E17 /* Sources */,
+				AFF350262005B51300807E17 /* Frameworks */,
+				AFF350272005B51300807E17 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = wmpayane;
+			productName = wmpayane;
+			productReference = AFF350292005B51300807E17 /* libwmpayane.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		AFF3504B2005B51300807E17 /* wmpayane.ane */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFF350642005B51300807E17 /* Build configuration list for PBXNativeTarget "wmpayane.ane" */;
+			buildPhases = (
+				AFF3504A2005B51300807E17 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AFF350512005B51300807E17 /* PBXTargetDependency */,
+			);
+			name = wmpayane.ane;
+			productName = wmpayane.ane;
+			productReference = AFF3504C2005B51300807E17 /* wmpayane.ane */;
+			productType = "com.apple.product-type.library.static";
+		};
+		AFF3504E2005B51300807E17 /* DebugwmpayaneAIRApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFF350672005B51300807E17 /* Build configuration list for PBXNativeTarget "DebugwmpayaneAIRApp" */;
+			buildPhases = (
+				AFF3504D2005B51300807E17 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AFF350532005B51300807E17 /* PBXTargetDependency */,
+			);
+			name = DebugwmpayaneAIRApp;
+			productName = DebugwmpayaneAIRApp;
+			productReference = AFF3504F2005B51300807E17 /* DebugwmpayaneAIRApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AFF350212005B51200807E17 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				TargetAttributes = {
+					AFF350282005B51300807E17 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					AFF3504B2005B51300807E17 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					AFF3504E2005B51300807E17 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = AFF350242005B51200807E17 /* Build configuration list for PBXProject "wmpayane" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AFF350202005B51200807E17;
+			productRefGroup = AFF3502A2005B51300807E17 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AFF350282005B51300807E17 /* wmpayane */,
+				AFF3504B2005B51300807E17 /* wmpayane.ane */,
+				AFF3504E2005B51300807E17 /* DebugwmpayaneAIRApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AFF3504A2005B51300807E17 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "\n\t\t\t\t\t\t\t\tchmod 755 \"$PROJECT_DIR/$PROJECT_NAME/generateANE.sh\"\n\t\t\t\t\t\t\t\t\"$PROJECT_DIR/$PROJECT_NAME/generateANE.sh\"\n\t\t\t\t\t";
+		};
+		AFF3504D2005B51300807E17 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "\n\t\t\t\t\t\t\t\tchmod 755 \"$PROJECT_DIR/$PROJECT_NAME/debugIPA.sh\"\n\t\t\t\t\t\t\t\t\"$PROJECT_DIR/$PROJECT_NAME/debugIPA.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AFF350252005B51300807E17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFF3505A2005B51300807E17 /* wmpayane.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AFF350512005B51300807E17 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AFF350282005B51300807E17 /* wmpayane */;
+			targetProxy = AFF350502005B51300807E17 /* PBXContainerItemProxy */;
+		};
+		AFF350532005B51300807E17 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AFF3504B2005B51300807E17 /* wmpayane.ane */;
+			targetProxy = AFF350522005B51300807E17 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AFF3505F2005B51300807E17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "/Users/wuyj/youjian.wu/common-lib/AIRSDK/include/";
+			};
+			name = Debug;
+		};
+		AFF350602005B51300807E17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "/Users/wuyj/youjian.wu/common-lib/AIRSDK/include/";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AFF350622005B51300807E17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7DUX67X748;
+				DSTROOT = /tmp/wmpayane.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "wmpayane/wmpayane-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		AFF350632005B51300807E17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7DUX67X748;
+				DSTROOT = /tmp/wmpayane.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "wmpayane/wmpayane-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		AFF350652005B51300807E17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				AIR_SDK_PATH = "/Users/wuyj/youjian.wu/common-lib/AIRSDK";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7DUX67X748;
+				EXECUTABLE_EXTENSION = ane;
+				EXECUTABLE_PREFIX = "";
+				NATIVEEXTENSION_SWC = /;
+				PRODUCT_NAME = wmpayane;
+			};
+			name = Debug;
+		};
+		AFF350662005B51300807E17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				AIR_SDK_PATH = "/Users/wuyj/youjian.wu/common-lib/AIRSDK";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7DUX67X748;
+				EXECUTABLE_EXTENSION = ane;
+				EXECUTABLE_PREFIX = "";
+				NATIVEEXTENSION_SWC = /;
+				PRODUCT_NAME = wmpayane;
+			};
+			name = Release;
+		};
+		AFF350682005B51300807E17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				AIR_SDK_PATH = "/Users/wuyj/youjian.wu/common-lib/AIRSDK";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7DUX67X748;
+				NATIVEEXTENSION_SWC = /;
+				PRODUCT_NAME = DebugwmpayaneAIRApp;
+			};
+			name = Debug;
+		};
+		AFF350692005B51300807E17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				AIR_SDK_PATH = "/Users/wuyj/youjian.wu/common-lib/AIRSDK";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7DUX67X748;
+				NATIVEEXTENSION_SWC = /;
+				PRODUCT_NAME = DebugwmpayaneAIRApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AFF350242005B51200807E17 /* Build configuration list for PBXProject "wmpayane" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFF3505F2005B51300807E17 /* Debug */,
+				AFF350602005B51300807E17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFF350612005B51300807E17 /* Build configuration list for PBXNativeTarget "wmpayane" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFF350622005B51300807E17 /* Debug */,
+				AFF350632005B51300807E17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFF350642005B51300807E17 /* Build configuration list for PBXNativeTarget "wmpayane.ane" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFF350652005B51300807E17 /* Debug */,
+				AFF350662005B51300807E17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFF350672005B51300807E17 /* Build configuration list for PBXNativeTarget "DebugwmpayaneAIRApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFF350682005B51300807E17 /* Debug */,
+				AFF350692005B51300807E17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AFF350212005B51200807E17 /* Project object */;
+}

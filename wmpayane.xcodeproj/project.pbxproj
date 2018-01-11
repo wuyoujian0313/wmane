@@ -11,6 +11,14 @@
 		AF4010DD20066BEC00A4D004 /* WechatAuthSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = AF4010D920066BEC00A4D004 /* WechatAuthSDK.h */; };
 		AF4010DE20066BEC00A4D004 /* WXApi.h in Headers */ = {isa = PBXBuildFile; fileRef = AF4010DA20066BEC00A4D004 /* WXApi.h */; };
 		AF4010DF20066BEC00A4D004 /* WXApiObject.h in Headers */ = {isa = PBXBuildFile; fileRef = AF4010DB20066BEC00A4D004 /* WXApiObject.h */; };
+		AF914F6920075B61006CDBCA /* alipayManager.h in Headers */ = {isa = PBXBuildFile; fileRef = AF914F6720075B61006CDBCA /* alipayManager.h */; };
+		AF914F6A20075B61006CDBCA /* alipayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AF914F6820075B61006CDBCA /* alipayManager.m */; };
+		AF914F6D20075B82006CDBCA /* wxpayManager.h in Headers */ = {isa = PBXBuildFile; fileRef = AF914F6B20075B82006CDBCA /* wxpayManager.h */; };
+		AF914F6E20075B82006CDBCA /* wxpayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AF914F6C20075B82006CDBCA /* wxpayManager.m */; };
+		AF914F7120075E81006CDBCA /* ANEExtensionFunc.h in Headers */ = {isa = PBXBuildFile; fileRef = AF914F6F20075E80006CDBCA /* ANEExtensionFunc.h */; };
+		AF914F7220075E81006CDBCA /* ANEExtensionFunc.m in Sources */ = {isa = PBXBuildFile; fileRef = AF914F7020075E81006CDBCA /* ANEExtensionFunc.m */; };
+		AF914F7520076559006CDBCA /* APOrderInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = AF914F7320076558006CDBCA /* APOrderInfo.h */; };
+		AF914F7620076559006CDBCA /* APOrderInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = AF914F7420076558006CDBCA /* APOrderInfo.m */; };
 		AFF3502D2005B51300807E17 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFF3502C2005B51300807E17 /* Foundation.framework */; };
 		AFF3502F2005B51300807E17 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFF3502E2005B51300807E17 /* CoreFoundation.framework */; };
 		AFF350312005B51300807E17 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFF350302005B51300807E17 /* UIKit.framework */; };
@@ -32,8 +40,6 @@
 		AFF3510F2005C2A700807E17 /* APRSASigner.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF350BD2005C2A700807E17 /* APRSASigner.m */; };
 		AFF351102005C2A700807E17 /* openssl_wrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = AFF350BE2005C2A700807E17 /* openssl_wrapper.h */; };
 		AFF351112005C2A700807E17 /* openssl_wrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF350BF2005C2A700807E17 /* openssl_wrapper.m */; };
-		AFF351172005F07D00807E17 /* ANEExtensionFunc.h in Headers */ = {isa = PBXBuildFile; fileRef = AFF351132005F07D00807E17 /* ANEExtensionFunc.h */; };
-		AFF351182005F07D00807E17 /* ANEExtensionFunc.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF351142005F07D00807E17 /* ANEExtensionFunc.m */; };
 		AFF351192005F07D00807E17 /* ANETypeConversion.h in Headers */ = {isa = PBXBuildFile; fileRef = AFF351152005F07D00807E17 /* ANETypeConversion.h */; };
 		AFF3511A2005F07D00807E17 /* ANETypeConversion.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF351162005F07D00807E17 /* ANETypeConversion.m */; };
 		AFF3511C2005F67800807E17 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFF3511B2005F67700807E17 /* CoreMotion.framework */; };
@@ -65,6 +71,14 @@
 		AF4010D920066BEC00A4D004 /* WechatAuthSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
 		AF4010DA20066BEC00A4D004 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
 		AF4010DB20066BEC00A4D004 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		AF914F6720075B61006CDBCA /* alipayManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = alipayManager.h; sourceTree = "<group>"; };
+		AF914F6820075B61006CDBCA /* alipayManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = alipayManager.m; sourceTree = "<group>"; };
+		AF914F6B20075B82006CDBCA /* wxpayManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = wxpayManager.h; sourceTree = "<group>"; };
+		AF914F6C20075B82006CDBCA /* wxpayManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = wxpayManager.m; sourceTree = "<group>"; };
+		AF914F6F20075E80006CDBCA /* ANEExtensionFunc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANEExtensionFunc.h; sourceTree = "<group>"; };
+		AF914F7020075E81006CDBCA /* ANEExtensionFunc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANEExtensionFunc.m; sourceTree = "<group>"; };
+		AF914F7320076558006CDBCA /* APOrderInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APOrderInfo.h; sourceTree = "<group>"; };
+		AF914F7420076558006CDBCA /* APOrderInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APOrderInfo.m; sourceTree = "<group>"; };
 		AFF350292005B51300807E17 /* libwmpayane.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libwmpayane.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFF3502C2005B51300807E17 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AFF3502E2005B51300807E17 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
@@ -95,8 +109,6 @@
 		AFF350BD2005C2A700807E17 /* APRSASigner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APRSASigner.m; sourceTree = "<group>"; };
 		AFF350BE2005C2A700807E17 /* openssl_wrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = openssl_wrapper.h; sourceTree = "<group>"; };
 		AFF350BF2005C2A700807E17 /* openssl_wrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = openssl_wrapper.m; sourceTree = "<group>"; };
-		AFF351132005F07D00807E17 /* ANEExtensionFunc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANEExtensionFunc.h; sourceTree = "<group>"; };
-		AFF351142005F07D00807E17 /* ANEExtensionFunc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANEExtensionFunc.m; sourceTree = "<group>"; };
 		AFF351152005F07D00807E17 /* ANETypeConversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANETypeConversion.h; sourceTree = "<group>"; };
 		AFF351162005F07D00807E17 /* ANETypeConversion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANETypeConversion.m; sourceTree = "<group>"; };
 		AFF3511B2005F67700807E17 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
@@ -204,6 +216,14 @@
 				AFF3506A2005C2A700807E17 /* alipay */,
 				AFF350572005B51300807E17 /* wmpayane.h */,
 				AFF350592005B51300807E17 /* wmpayane.m */,
+				AF914F6720075B61006CDBCA /* alipayManager.h */,
+				AF914F6820075B61006CDBCA /* alipayManager.m */,
+				AF914F6B20075B82006CDBCA /* wxpayManager.h */,
+				AF914F6C20075B82006CDBCA /* wxpayManager.m */,
+				AF914F6F20075E80006CDBCA /* ANEExtensionFunc.h */,
+				AF914F7020075E81006CDBCA /* ANEExtensionFunc.m */,
+				AF914F7320076558006CDBCA /* APOrderInfo.h */,
+				AF914F7420076558006CDBCA /* APOrderInfo.m */,
 				AFF350552005B51300807E17 /* Supporting Files */,
 			);
 			path = wmpayane;
@@ -245,8 +265,6 @@
 		AFF351122005F07D00807E17 /* ANEHelper */ = {
 			isa = PBXGroup;
 			children = (
-				AFF351132005F07D00807E17 /* ANEExtensionFunc.h */,
-				AFF351142005F07D00807E17 /* ANEExtensionFunc.m */,
 				AFF351152005F07D00807E17 /* ANETypeConversion.h */,
 				AFF351162005F07D00807E17 /* ANETypeConversion.m */,
 			);
@@ -260,14 +278,17 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF914F6D20075B82006CDBCA /* wxpayManager.h in Headers */,
+				AF914F6920075B61006CDBCA /* alipayManager.h in Headers */,
 				AFF351192005F07D00807E17 /* ANETypeConversion.h in Headers */,
 				AFF3510E2005C2A700807E17 /* APRSASigner.h in Headers */,
 				AF4010DE20066BEC00A4D004 /* WXApi.h in Headers */,
+				AF914F7520076559006CDBCA /* APOrderInfo.h in Headers */,
 				AF4010DF20066BEC00A4D004 /* WXApiObject.h in Headers */,
-				AFF351172005F07D00807E17 /* ANEExtensionFunc.h in Headers */,
 				AFF351102005C2A700807E17 /* openssl_wrapper.h in Headers */,
 				AFF350582005B51300807E17 /* wmpayane.h in Headers */,
 				AF4010DD20066BEC00A4D004 /* WechatAuthSDK.h in Headers */,
+				AF914F7120075E81006CDBCA /* ANEExtensionFunc.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,9 +420,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFF3511A2005F07D00807E17 /* ANETypeConversion.m in Sources */,
+				AF914F7620076559006CDBCA /* APOrderInfo.m in Sources */,
+				AF914F6E20075B82006CDBCA /* wxpayManager.m in Sources */,
 				AFF3505A2005B51300807E17 /* wmpayane.m in Sources */,
 				AFF3510F2005C2A700807E17 /* APRSASigner.m in Sources */,
-				AFF351182005F07D00807E17 /* ANEExtensionFunc.m in Sources */,
+				AF914F6A20075B61006CDBCA /* alipayManager.m in Sources */,
+				AF914F7220075E81006CDBCA /* ANEExtensionFunc.m in Sources */,
 				AFF351112005C2A700807E17 /* openssl_wrapper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,6 +8,8 @@
 
 #import "ANEExtensionFunc.h"
 #import "ANETypeConversion.h"
+#import "alipayManager.h"
+#import "wxpayManager.h"
 
 
 #define DISPATCH_STATUS_EVENT(extensionContext, code, status) FREDispatchStatusEventAsync((extensionContext), (uint8_t*)code, (uint8_t*)status)
@@ -29,20 +31,20 @@
     return self;
 }
 
-- (void)registerWXSDK:(FREObject)appId appSecret:(FREObject)appSecret {
-    
+- (FREObject)registerWXSDK:(FREObject)appId appSecret:(FREObject)appSecret {
+    return NULL;
 }
 
-- (void)registerAlipaySDK:(FREObject)appId appSecret:(FREObject)appSecret {
-    
+- (FREObject)registerAlipaySDK:(FREObject)appId appSecret:(FREObject)appSecret {
+    return NULL;
 }
 
-- (void)alipay:(FREObject)payJson {
-    
+- (FREObject)alipay:(FREObject)payJson {
+    return NULL;
 }
 
-- (void)wxpay:(FREObject)payJson {
-    
+- (FREObject)wxpay:(FREObject)payJson {
+    return NULL;
 }
 
 @end

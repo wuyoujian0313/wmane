@@ -30,10 +30,31 @@ either expressed or implied, of the FreeBSD Project.
 -->
 
 <platform xmlns="http://ns.adobe.com/air/extension/3.1"> 
-    <description > An optional description</description> 
-    <copyright>2012 (optional)</copyright> 
-    <linkerOptions> 
-<!--        <option>-framework CoreMotion</option> -->
+    <description >WeiMeiTC Extension</description>
+    <copyright>WeiMeiTCPayANE</copyright>
+    <linkerOptions>
+        <option>-framework CoreText</option>
+        <option>-framework CoreTelephony</option>
+        <option>-framework AlipaySDK</option>
+        <option>-framework CoreMotion</option>
+        <option>-framework CoreFoundation</option>
+        <option>-framework MobileCoreServices</option>
+        <option>-framework CoreGraphics</option>
+        <option>-framework SystemConfiguration</option>
+        <option>-framework AudioToolbox</option>
+        <option>-framework CFNetwork</option>
+        <option>-framework QuartzCore</option>
+        <option>-framework OpenGLES</option>
+        <option>-framework CoreLocation</option>
+        <option>-framework CoreMedia</option>
+        <option>-framework CoreVideo</option>
+        <option>-framework AVFoundation</option>
+        <option>-framework Security</option>
+        <option>-lsqlite3</option>
+        <option>-lc++</option>
+        <option>-lz</option>
+        <option>-ObjC -lz</option>
+        <option>-ios_version_min 7.0</option>
     </linkerOptions> 
 </platform>
 

@@ -70,9 +70,21 @@ void ContextInitializer(void* extData, const uint8_t* ctxType, FREContext ctx, u
 */
 void ContextFinalizer(FREContext ctx);
 
-/* This is a sample function that is being included as part of this template. 
- *
- * Users of this template are expected to change this and add similar functions 
- * to be able to call the native functions in the ANE from their ActionScript code
-*/
-ANE_FUNCTION(isSupported);
+
+ANE_FUNCTION(registerWXSDK);
+ANE_FUNCTION(registerAlipaySDK);
+
+// 支付接口，参数采用json字符串(UTF-8编码)传递；
+/*
+ 字段:
+ goodsDesc :商品描述
+ goodsName :商品名称
+ orderNo   :订单号
+ price     :商品价格
+ scheme    :应用程序配置的scheme
+ 
+ 例如：
+ {"goodsDesc":"描述","goodsName":"名称","orderNo":"123321","price":"12.0","scheme":"alipayXXXX"}
+ */
+ANE_FUNCTION(alipay);
+ANE_FUNCTION(wxpay);

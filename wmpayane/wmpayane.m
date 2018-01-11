@@ -39,6 +39,10 @@
  */
 
 #import "wmpayane.h"
+#import "ANEExtensionFunc.h"
+
+
+ANEExtensionFunc *globalANEExFuc;
 
 /* wmpayaneExtInitializer()
  * The extension initializer is called the first time the ActionScript side of the extension
@@ -82,13 +86,16 @@ void ContextInitializer(void* extData, const uint8_t* ctxType, FREContext ctx, u
      */
     static FRENamedFunction func[] = 
     {
-        MAP_FUNCTION(isSupported, NULL),
+        MAP_FUNCTION(registerWXSDK,NULL),
+        MAP_FUNCTION(registerAlipaySDK,NULL),
+        MAP_FUNCTION(alipay,NULL),
     };
     
     *numFunctionsToTest = sizeof(func) / sizeof(FRENamedFunction);
     *functionsToSet = func;
     
-    NSLog(@"Exiting ContextInitializer()");
+    globalANEExFuc = [[ANEExtensionFunc alloc] initWithContext:ctx];
+    
 }
 
 /* ContextFinalizer()
@@ -105,29 +112,19 @@ void ContextFinalizer(FREContext ctx)
     return;
 }
 
+ANE_FUNCTION(registerWXSDK) {
+    return [globalANEExFuc registerWXSDK:argv[0] appSecret:argv[1]];
+}
 
-/* This is a TEST function that is being included as part of this template. 
- *
- * Users of this template are expected to change this and add similar functions 
- * to be able to call the native functions in the ANE from their ActionScript code
- */
-ANE_FUNCTION(isSupported)
-{
-    NSLog(@"Entering IsSupported()");
-    
-    FREObject fo;
-    
-    FREResult aResult = FRENewObjectFromBool(YES, &fo);
-    if (aResult == FRE_OK)
-    {
-        NSLog(@"Result = %d", aResult);
-    }
-    else
-    {
-        NSLog(@"Result = %d", aResult);
-    }
-    
-	NSLog(@"Exiting IsSupported()");    
-	return fo;
+ANE_FUNCTION(registerAlipaySDK) {
+    return [globalANEExFuc registerAlipaySDK:argv[0] appSecret:argv[1]];
+}
+
+ANE_FUNCTION(alipay) {
+    return [globalANEExFuc alipay:argv[0]];
+}
+
+ANE_FUNCTION(wxpay) {
+    return [globalANEExFuc wxpay:argv[0]];
 }
 

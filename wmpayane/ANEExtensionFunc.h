@@ -13,11 +13,11 @@
 
 - (instancetype)initWithContext:(FREContext)extensionContext;
 
-- (void)registerWXSDK:(FREObject)appId appSecret:(FREObject)appSecret;
-- (void)registerAlipaySDK:(FREObject)appId appSecret:(FREObject)appSecret;
+- (FREObject)registerWXSDK:(FREObject)appId appSecret:(FREObject)appSecret;
+- (FREObject)registerAlipaySDK:(FREObject)appId appSecret:(FREObject)appSecret;
 
-- (void)alipay:(FREObject)payJson;
-- (void)wxpay:(FREObject)payJson;
+- (FREObject)alipay:(FREObject)payJson;
+- (FREObject)wxpay:(FREObject)payJson;
 
 //// 注册分享库
 //- (FREObject)registerShareSDK;

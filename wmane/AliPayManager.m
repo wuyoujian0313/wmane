@@ -55,8 +55,6 @@
 
 - (void)toPay {
     NSError * error = nil;
-    NSData *jsonData = [_payJson dataUsingEncoding:NSUTF8StringEncoding];
-    
     /*
      字段:
      goodsDesc :商品描述
@@ -65,6 +63,7 @@
      price     :商品价格
      scheme    :应用程序配置的scheme
      */
+    NSData *jsonData = [_payJson dataUsingEncoding:NSUTF8StringEncoding];
     NSDictionary* param = [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingAllowFragments error:&error];
     /*
      *生成订单信息及签名

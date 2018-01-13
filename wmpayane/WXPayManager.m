@@ -1,16 +1,16 @@
 //
-//  wxpayManager.m
+//  WXPayManager.m
 //  wmpayane
 //
 //  Created by wuyoujian on 2018/1/11.
 //
 
-#import "wxpayManager.h"
+#import "WXPayManager.h"
 
-@implementation wxpayManager
+@implementation WXPayManager
 
-+ (wxpayManager*)sharewxpayManager {
-    static wxpayManager *obj = nil;
++ (WXPayManager*)shareWXPayManager {
+    static WXPayManager *obj = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         obj = [[self alloc] init];

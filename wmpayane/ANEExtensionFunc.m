@@ -8,8 +8,11 @@
 
 #import "ANEExtensionFunc.h"
 #import "ANETypeConversion.h"
-#import "alipayManager.h"
-#import "wxpayManager.h"
+#import "AliPayManager.h"
+#import "WXPayManager.h"
+#import <objc/runtime.h>
+
+
 
 
 #define DISPATCH_STATUS_EVENT(extensionContext, code, status) FREDispatchStatusEventAsync((extensionContext), (uint8_t*)code, (uint8_t*)status)
@@ -46,5 +49,15 @@
 - (FREObject)wxpay:(FREObject)payJson {
     return NULL;
 }
+
+@end
+
+#pragma mark - UIApplicationDelegate的钩子函数，不用修改！！！
+@interface AIAppHook2Pay : NSObject
+@end
+
+@implementation AIAppHook2Pay
+
+
 
 @end

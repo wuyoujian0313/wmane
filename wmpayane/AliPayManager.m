@@ -1,25 +1,27 @@
 //
-//  alipayManager.m
+//  AliPayManager.m
 //  wmpayane
 //
 //  Created by wuyoujian on 2018/1/11.
 //
 
-#import "alipayManager.h"
+#import "AliPayManager.h"
 #import <AlipaySDK/AlipaySDK.h>
 #import "APOrderInfo.h"
 #import "APRSASigner.h"
+#import "PayConstant.h"
 
-@interface alipayManager ()
+@interface AliPayManager ()
 @property (nonatomic, copy) NSString *appId;
 @property (nonatomic, copy) NSString *appSecret;
 @property (nonatomic, copy) NSString *rsa2PrivateKey;
+@property (nonatomic, copy) PayCompletionBlock  payFinishBlock;
 @end
 
-@implementation alipayManager
+@implementation AliPayManager
 
-+ (alipayManager*)shareAlipayManager {
-    static alipayManager *obj = nil;
++ (AliPayManager*)shareAliPayManager {
+    static AliPayManager *obj = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         obj = [[self alloc] init];
@@ -34,7 +36,26 @@
     // 获取密钥
 }
 
-- (void)pay:(NSString *)payJson {
+- (void)handleOpenURL:(NSURL *)url {
+    
+    AliPayManager *wSelf = self;
+    // 支付跳转支付宝钱包进行支付，处理支付结果
+    [[AlipaySDK defaultService] processOrderWithPaymentResult:url standbyCallback:^(NSDictionary *resultDic) {
+        NSLog(@"result = %@",resultDic);
+        
+        AliPayManager *sSelf = wSelf;
+        NSError *error = nil;
+        NSData *jsonData = [NSJSONSerialization dataWithJSONObject:resultDic options:NSJSONWritingPrettyPrinted error:&error];
+        NSString *jsonString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+        
+        if (sSelf.payFinishBlock) {
+            sSelf.payFinishBlock(jsonString);
+        }
+    }];
+}
+
+- (void)pay:(NSString *)payJson completion:(PayCompletionBlock)block {
+    _payFinishBlock = block;
     NSError * error = nil;
     NSData *jsonData = [payJson dataUsingEncoding:NSUTF8StringEncoding];
     

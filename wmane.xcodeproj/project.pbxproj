@@ -38,8 +38,8 @@
 		AFF350452005B51300807E17 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFF350442005B51300807E17 /* CoreVideo.framework */; };
 		AFF350472005B51300807E17 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFF350462005B51300807E17 /* AVFoundation.framework */; };
 		AFF350492005B51300807E17 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFF350482005B51300807E17 /* Security.framework */; };
-		AFF350582005B51300807E17 /* wmpayane.h in Headers */ = {isa = PBXBuildFile; fileRef = AFF350572005B51300807E17 /* wmpayane.h */; };
-		AFF3505A2005B51300807E17 /* wmpayane.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF350592005B51300807E17 /* wmpayane.m */; };
+		AFF350582005B51300807E17 /* wmane.h in Headers */ = {isa = PBXBuildFile; fileRef = AFF350572005B51300807E17 /* wmane.h */; };
+		AFF3505A2005B51300807E17 /* wmane.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF350592005B51300807E17 /* wmane.m */; };
 		AFF3510E2005C2A700807E17 /* APRSASigner.h in Headers */ = {isa = PBXBuildFile; fileRef = AFF350BC2005C2A700807E17 /* APRSASigner.h */; };
 		AFF3510F2005C2A700807E17 /* APRSASigner.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF350BD2005C2A700807E17 /* APRSASigner.m */; };
 		AFF351102005C2A700807E17 /* openssl_wrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = AFF350BE2005C2A700807E17 /* openssl_wrapper.h */; };
@@ -58,7 +58,7 @@
 			containerPortal = AFF350212005B51200807E17 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = AFF350282005B51300807E17;
-			remoteInfo = wmpayane;
+			remoteInfo = wmane;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -81,7 +81,7 @@
 		AF914F7420076558006CDBCA /* APOrderInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APOrderInfo.m; sourceTree = "<group>"; };
 		AFC3306B2009F60100E16EAC /* GetRSARequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GetRSARequest.h; sourceTree = "<group>"; };
 		AFC3306C2009F60100E16EAC /* GetRSARequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetRSARequest.m; sourceTree = "<group>"; };
-		AFF350292005B51300807E17 /* libwmpayane.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libwmpayane.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFF350292005B51300807E17 /* libwmane.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libwmane.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFF3502C2005B51300807E17 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AFF3502E2005B51300807E17 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		AFF350302005B51300807E17 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -97,10 +97,10 @@
 		AFF350442005B51300807E17 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		AFF350462005B51300807E17 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		AFF350482005B51300807E17 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		AFF3504C2005B51300807E17 /* wmpayane.ane */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = wmpayane.ane; sourceTree = BUILT_PRODUCTS_DIR; };
-		AFF350562005B51300807E17 /* wmpayane-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wmpayane-Prefix.pch"; sourceTree = "<group>"; };
-		AFF350572005B51300807E17 /* wmpayane.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = wmpayane.h; sourceTree = "<group>"; };
-		AFF350592005B51300807E17 /* wmpayane.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = wmpayane.m; sourceTree = "<group>"; };
+		AFF3504C2005B51300807E17 /* wmane.ane */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = wmane.ane; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFF350562005B51300807E17 /* wmane-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wmane-Prefix.pch"; sourceTree = "<group>"; };
+		AFF350572005B51300807E17 /* wmane.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = wmane.h; sourceTree = "<group>"; };
+		AFF350592005B51300807E17 /* wmane.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = wmane.m; sourceTree = "<group>"; };
 		AFF3505B2005B51300807E17 /* extension.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = extension.xml; sourceTree = "<group>"; };
 		AFF3505C2005B51300807E17 /* platformoptions.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = platformoptions.xml; sourceTree = "<group>"; };
 		AFF3505D2005B51300807E17 /* generateANE.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = generateANE.sh; sourceTree = "<group>"; };
@@ -166,7 +166,7 @@
 		AFF350202005B51200807E17 = {
 			isa = PBXGroup;
 			children = (
-				AFF350542005B51300807E17 /* wmpayane */,
+				AFF350542005B51300807E17 /* wmane */,
 				AFF3502B2005B51300807E17 /* Frameworks */,
 				AFF3502A2005B51300807E17 /* Products */,
 			);
@@ -175,8 +175,8 @@
 		AFF3502A2005B51300807E17 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AFF350292005B51300807E17 /* libwmpayane.a */,
-				AFF3504C2005B51300807E17 /* wmpayane.ane */,
+				AFF350292005B51300807E17 /* libwmane.a */,
+				AFF3504C2005B51300807E17 /* wmane.ane */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -208,14 +208,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		AFF350542005B51300807E17 /* wmpayane */ = {
+		AFF350542005B51300807E17 /* wmane */ = {
 			isa = PBXGroup;
 			children = (
 				AF4010D620066BEC00A4D004 /* WechatSDK1.8.2 */,
 				AFF351122005F07D00807E17 /* ANEHelper */,
 				AFF3506A2005C2A700807E17 /* alipay */,
-				AFF350572005B51300807E17 /* wmpayane.h */,
-				AFF350592005B51300807E17 /* wmpayane.m */,
+				AFF350572005B51300807E17 /* wmane.h */,
+				AFF350592005B51300807E17 /* wmane.m */,
 				AF914F6720075B61006CDBCA /* AliPayManager.h */,
 				AF914F6820075B61006CDBCA /* AliPayManager.m */,
 				AF914F6B20075B82006CDBCA /* WXPayManager.h */,
@@ -231,13 +231,13 @@
 				AFC3306C2009F60100E16EAC /* GetRSARequest.m */,
 				AFF350552005B51300807E17 /* Supporting Files */,
 			);
-			path = wmpayane;
+			path = wmane;
 			sourceTree = "<group>";
 		};
 		AFF350552005B51300807E17 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				AFF350562005B51300807E17 /* wmpayane-Prefix.pch */,
+				AFF350562005B51300807E17 /* wmane-Prefix.pch */,
 				AFF3505B2005B51300807E17 /* extension.xml */,
 				AFF3505C2005B51300807E17 /* platformoptions.xml */,
 				AFF3505D2005B51300807E17 /* generateANE.sh */,
@@ -293,7 +293,7 @@
 				AF914F7520076559006CDBCA /* APOrderInfo.h in Headers */,
 				AF4010DF20066BEC00A4D004 /* WXApiObject.h in Headers */,
 				AFF351102005C2A700807E17 /* openssl_wrapper.h in Headers */,
-				AFF350582005B51300807E17 /* wmpayane.h in Headers */,
+				AFF350582005B51300807E17 /* wmane.h in Headers */,
 				AF4010DD20066BEC00A4D004 /* WechatAuthSDK.h in Headers */,
 				AF914F7120075E81006CDBCA /* ANEExtensionFunc.h in Headers */,
 			);
@@ -302,9 +302,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		AFF350282005B51300807E17 /* wmpayane */ = {
+		AFF350282005B51300807E17 /* wmane */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AFF350612005B51300807E17 /* Build configuration list for PBXNativeTarget "wmpayane" */;
+			buildConfigurationList = AFF350612005B51300807E17 /* Build configuration list for PBXNativeTarget "wmane" */;
 			buildPhases = (
 				AFF350252005B51300807E17 /* Sources */,
 				AFF350262005B51300807E17 /* Frameworks */,
@@ -314,14 +314,14 @@
 			);
 			dependencies = (
 			);
-			name = wmpayane;
-			productName = wmpayane;
-			productReference = AFF350292005B51300807E17 /* libwmpayane.a */;
+			name = wmane;
+			productName = wmane;
+			productReference = AFF350292005B51300807E17 /* libwmane.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		AFF3504B2005B51300807E17 /* wmpayane.ane */ = {
+		AFF3504B2005B51300807E17 /* wmane.ane */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AFF350642005B51300807E17 /* Build configuration list for PBXNativeTarget "wmpayane.ane" */;
+			buildConfigurationList = AFF350642005B51300807E17 /* Build configuration list for PBXNativeTarget "wmane.ane" */;
 			buildPhases = (
 				AFF3504A2005B51300807E17 /* ShellScript */,
 			);
@@ -330,9 +330,9 @@
 			dependencies = (
 				AFF350512005B51300807E17 /* PBXTargetDependency */,
 			);
-			name = wmpayane.ane;
-			productName = wmpayane.ane;
-			productReference = AFF3504C2005B51300807E17 /* wmpayane.ane */;
+			name = wmane.ane;
+			productName = wmane.ane;
+			productReference = AFF3504C2005B51300807E17 /* wmane.ane */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -353,7 +353,7 @@
 					};
 				};
 			};
-			buildConfigurationList = AFF350242005B51200807E17 /* Build configuration list for PBXProject "wmpayane" */;
+			buildConfigurationList = AFF350242005B51200807E17 /* Build configuration list for PBXProject "wmane" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -365,8 +365,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AFF350282005B51300807E17 /* wmpayane */,
-				AFF3504B2005B51300807E17 /* wmpayane.ane */,
+				AFF350282005B51300807E17 /* wmane */,
+				AFF3504B2005B51300807E17 /* wmane.ane */,
 			);
 		};
 /* End PBXProject section */
@@ -397,7 +397,7 @@
 				AF914F7620076559006CDBCA /* APOrderInfo.m in Sources */,
 				AF914F6E20075B82006CDBCA /* WXPayManager.m in Sources */,
 				AFC3306E2009F60100E16EAC /* GetRSARequest.m in Sources */,
-				AFF3505A2005B51300807E17 /* wmpayane.m in Sources */,
+				AFF3505A2005B51300807E17 /* wmane.m in Sources */,
 				AFF3510F2005C2A700807E17 /* APRSASigner.m in Sources */,
 				AF914F6A20075B61006CDBCA /* AliPayManager.m in Sources */,
 				AF914F7220075E81006CDBCA /* ANEExtensionFunc.m in Sources */,
@@ -410,7 +410,7 @@
 /* Begin PBXTargetDependency section */
 		AFF350512005B51300807E17 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = AFF350282005B51300807E17 /* wmpayane */;
+			target = AFF350282005B51300807E17 /* wmane */;
 			targetProxy = AFF350502005B51300807E17 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -474,27 +474,27 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7DUX67X748;
-				DSTROOT = /tmp/wmpayane.dst;
+				DSTROOT = /tmp/wmane.dst;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/wmpayane/alipay",
+					"$(PROJECT_DIR)/wmane/alipay",
 					"$(PROJECT_DIR)",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_ENABLE_CPP_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "wmpayane/wmpayane-Prefix.pch";
+				GCC_PREFIX_HEADER = "wmane/wmane-Prefix.pch";
 				GCC_VERSION = "";
 				HEADER_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/wmpayane/alipay",
-					"$(PROJECT_DIR)/wmpayane/alipay/openssl",
+					"$(PROJECT_DIR)/wmane/alipay",
+					"$(PROJECT_DIR)/wmane/alipay/openssl",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/wmpayane/alipay",
+					"$(PROJECT_DIR)/wmane/alipay",
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/wmpayane/WechatSDK1.8.2",
+					"$(PROJECT_DIR)/wmane/WechatSDK1.8.2",
 				);
 				OTHER_LDFLAGS = (
 					"-Objc",
@@ -513,27 +513,27 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7DUX67X748;
-				DSTROOT = /tmp/wmpayane.dst;
+				DSTROOT = /tmp/wmane.dst;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/wmpayane/alipay",
+					"$(PROJECT_DIR)/wmane/alipay",
 					"$(PROJECT_DIR)",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_ENABLE_CPP_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "wmpayane/wmpayane-Prefix.pch";
+				GCC_PREFIX_HEADER = "wmane/wmane-Prefix.pch";
 				GCC_VERSION = "";
 				HEADER_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/wmpayane/alipay",
-					"$(PROJECT_DIR)/wmpayane/alipay/openssl",
+					"$(PROJECT_DIR)/wmane/alipay",
+					"$(PROJECT_DIR)/wmane/alipay/openssl",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/wmpayane/alipay",
+					"$(PROJECT_DIR)/wmane/alipay",
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/wmpayane/WechatSDK1.8.2",
+					"$(PROJECT_DIR)/wmane/WechatSDK1.8.2",
 				);
 				OTHER_LDFLAGS = (
 					"-Objc",
@@ -559,7 +559,7 @@
 					"-Objc",
 					"-lz",
 				);
-				PRODUCT_NAME = wmpayane;
+				PRODUCT_NAME = wmane;
 			};
 			name = Debug;
 		};
@@ -578,14 +578,14 @@
 					"-Objc",
 					"-lz",
 				);
-				PRODUCT_NAME = wmpayane;
+				PRODUCT_NAME = wmane;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AFF350242005B51200807E17 /* Build configuration list for PBXProject "wmpayane" */ = {
+		AFF350242005B51200807E17 /* Build configuration list for PBXProject "wmane" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AFF3505F2005B51300807E17 /* Debug */,
@@ -594,7 +594,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AFF350612005B51300807E17 /* Build configuration list for PBXNativeTarget "wmpayane" */ = {
+		AFF350612005B51300807E17 /* Build configuration list for PBXNativeTarget "wmane" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AFF350622005B51300807E17 /* Debug */,
@@ -603,7 +603,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AFF350642005B51300807E17 /* Build configuration list for PBXNativeTarget "wmpayane.ane" */ = {
+		AFF350642005B51300807E17 /* Build configuration list for PBXNativeTarget "wmane.ane" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AFF350652005B51300807E17 /* Debug */,

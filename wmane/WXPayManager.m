@@ -33,7 +33,7 @@
 }
 
 - (void)handleOpenURL:(NSURL *)url {
-    __weak WXPayManager *wSelf = self;
+    //__weak WXPayManager *wSelf = self;
     // 微信支付回调
 }
 

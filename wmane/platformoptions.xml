@@ -31,7 +31,7 @@ either expressed or implied, of the FreeBSD Project.
 
 <platform xmlns="http://ns.adobe.com/air/extension/3.1"> 
     <description >WeiMeiTC Extension</description>
-    <copyright>WeiMeiTCPayANE</copyright>
+    <copyright>WeiMeiTCANE</copyright>
     <linkerOptions>
         <option>-framework CoreText</option>
         <option>-framework CoreTelephony</option>

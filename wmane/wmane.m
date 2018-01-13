@@ -31,14 +31,14 @@
  */
 
 /*
- * wmpayane.m
- * wmpayane
+ * wmane.m
+ * wmane
  *
  * Created by wuyoujian on 2018/1/10.
  * Copyright (c) 2018年 ___ORGANIZATIONNAME___. All rights reserved.
  */
 
-#import "wmpayane.h"
+#import "wmane.h"
 #import "ANEExtensionFunc.h"
 
 

@@ -1,6 +1,6 @@
 //
 //  WXPayManager.h
-//  wmpayane
+//  wmane
 //
 //  Created by wuyoujian on 2018/1/11.
 //

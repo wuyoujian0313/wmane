@@ -44,34 +44,34 @@
 
 ANEExtensionFunc *globalANEExFuc;
 
-/* wmpayaneExtInitializer()
+/* wmaneExtInitializer()
  * The extension initializer is called the first time the ActionScript side of the extension
  * calls ExtensionContext.createExtensionContext() for any context.
  *
  * Please note: this should be same as the <initializer> specified in the extension.xml 
  */
-void wmpayaneExtInitializer(void** extDataToSet, FREContextInitializer* ctxInitializerToSet, FREContextFinalizer* ctxFinalizerToSet) 
+void wmaneExtInitializer(void** extDataToSet, FREContextInitializer* ctxInitializerToSet, FREContextFinalizer* ctxFinalizerToSet) 
 {
-    NSLog(@"Entering wmpayaneExtInitializer()");
+    NSLog(@"Entering wmaneExtInitializer()");
 
     *extDataToSet = NULL;
     *ctxInitializerToSet = &ContextInitializer;
     *ctxFinalizerToSet = &ContextFinalizer;
 
-    NSLog(@"Exiting wmpayaneExtInitializer()");
+    NSLog(@"Exiting wmaneExtInitializer()");
 }
 
-/* wmpayaneExtFinalizer()
+/* wmaneExtFinalizer()
  * The extension finalizer is called when the runtime unloads the extension. However, it may not always called.
  *
  * Please note: this should be same as the <finalizer> specified in the extension.xml 
  */
-void wmpayaneExtFinalizer(void* extData) 
+void wmaneExtFinalizer(void* extData) 
 {
-    NSLog(@"Entering wmpayaneExtFinalizer()");
+    NSLog(@"Entering wmaneExtFinalizer()");
 
     // Nothing to clean up.
-    NSLog(@"Exiting wmpayaneExtFinalizer()");
+    NSLog(@"Exiting wmaneExtFinalizer()");
     return;
 }
 

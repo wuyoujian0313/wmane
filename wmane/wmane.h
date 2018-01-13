@@ -31,7 +31,7 @@
  */
 
 /*  
- * wmpayane
+ * wmane
  *
  * Created by wuyoujian on 2018/1/10.
  * Copyright (c) 2018年 ___ORGANIZATIONNAME___. All rights reserved.
@@ -43,20 +43,20 @@
 #define ANE_FUNCTION(f) FREObject (f)(FREContext ctx, void *data, uint32_t argc, FREObject argv[])
 #define MAP_FUNCTION(f, data) { (const uint8_t*)(#f), (data), &(f) }
 
-/* wmpayaneExtInitializer()
+/* wmaneExtInitializer()
  * The extension initializer is called the first time the ActionScript side of the extension
  * calls ExtensionContext.createExtensionContext() for any context.
  *
  * Please note: this should be same as the <initializer> specified in the extension.xml 
 */
-void wmpayaneExtInitializer(void** extDataToSet, FREContextInitializer* ctxInitializerToSet, FREContextFinalizer* ctxFinalizerToSet);
+void wmaneExtInitializer(void** extDataToSet, FREContextInitializer* ctxInitializerToSet, FREContextFinalizer* ctxFinalizerToSet);
 
-/* wmpayaneExtFinalizer()
+/* wmaneExtFinalizer()
  * The extension finalizer is called when the runtime unloads the extension. However, it may not always called.
  *
  * Please note: this should be same as the <finalizer> specified in the extension.xml 
 */
-void wmpayaneExtFinalizer(void* extData);
+void wmaneExtFinalizer(void* extData);
 
 /* ContextInitializer()
  * The context initializer is called when the runtime creates the extension context instance.

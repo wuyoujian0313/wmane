@@ -9,12 +9,14 @@
 #import <AlipaySDK/AlipaySDK.h>
 #import "APOrderInfo.h"
 #import "APRSASigner.h"
-#import "PayConstant.h"
+#import "GetRSARequest.h"
+
 
 @interface AliPayManager ()
 @property (nonatomic, copy) NSString *appId;
 @property (nonatomic, copy) NSString *appSecret;
 @property (nonatomic, copy) NSString *rsa2PrivateKey;
+@property (nonatomic, copy) NSString *payJson;
 @property (nonatomic, copy) PayCompletionBlock  payFinishBlock;
 @end
 
@@ -32,13 +34,10 @@
 - (void)registerSDK:(NSString*)appId appSecret:(NSString*)appSecret {
     _appId = appId;
     _appSecret = appSecret;
-    
-    // 获取密钥
 }
 
 - (void)handleOpenURL:(NSURL *)url {
-    
-    AliPayManager *wSelf = self;
+    __weak AliPayManager *wSelf = self;
     // 支付跳转支付宝钱包进行支付，处理支付结果
     [[AlipaySDK defaultService] processOrderWithPaymentResult:url standbyCallback:^(NSDictionary *resultDic) {
         NSLog(@"result = %@",resultDic);
@@ -54,10 +53,9 @@
     }];
 }
 
-- (void)pay:(NSString *)payJson completion:(PayCompletionBlock)block {
-    _payFinishBlock = block;
+- (void)toPay {
     NSError * error = nil;
-    NSData *jsonData = [payJson dataUsingEncoding:NSUTF8StringEncoding];
+    NSData *jsonData = [_payJson dataUsingEncoding:NSUTF8StringEncoding];
     
     /*
      字段:
@@ -102,12 +100,12 @@
     order.biz_content.out_trade_no = param[@"orderNo"];
     order.biz_content.total_amount = param[@"price"];
     order.biz_content.timeout_express = @"30m"; //超时时间设置
-
+    
     //将商品信息拼接成字符串
     NSString *orderInfo = [order orderInfoEncoded:NO];
     NSString *orderInfoEncoded = [order orderInfoEncoded:YES];
     NSLog(@"orderSpec = %@",orderInfo);
-
+    
     // NOTE: 获取私钥并将商户信息签名，外部商户的加签过程请务必放在服务端，防止公私钥数据泄露；
     // 需要遵循RSA签名规范，并将签名字符串base64编码和UrlEncode
     NSString *signedString = nil;
@@ -117,20 +115,38 @@
     } else {
         signedString = [signer signString:orderInfo withRSA2:NO];
     }
-
+    
     // NOTE: 如果加签成功，则继续执行支付
     if (signedString != nil) {
         //应用注册scheme
         NSString *appScheme = param[@"scheme"];
-
+        
         // NOTE: 将签名成功字符串格式化为订单字符串,请严格按照该格式
         NSString *orderString = [NSString stringWithFormat:@"%@&sign=%@",
                                  orderInfoEncoded, signedString];
-
+        
         // NOTE: 调用支付结果开始支付
         [[AlipaySDK defaultService] payOrder:orderString fromScheme:appScheme callback:^(NSDictionary *resultDic) {
             NSLog(@"reslut = %@",resultDic);
         }];
+    }
+}
+
+- (void)pay:(NSString *)payJson completion:(PayCompletionBlock)block {
+    _payFinishBlock = block;
+    _payJson = payJson;
+    if (_rsa2PrivateKey == nil || [_rsa2PrivateKey length] == 0) {
+        GetRSARequest *request = [[GetRSARequest alloc] init];
+        request.appId = _appId;
+        
+        __weak AliPayManager *wSelf = self;
+        [request getRSAKeyFinishBlock:^(NSString *rsaKey) {
+            //
+            AliPayManager *sSelf = wSelf;
+            [sSelf toPay];
+        }];
+    } else {
+        [self toPay];
     }
 }
 

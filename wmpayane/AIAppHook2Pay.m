@@ -12,7 +12,8 @@
 #import "WXPayManager.h"
 #import <objc/runtime.h>
 
-
+// AppDelegate的名称，即，main的第三个参数值
+#define AppDelegateClassName        @"CTAppController"
 
 @implementation AIAppHook2Pay
 
@@ -53,11 +54,10 @@
     if ([url.host isEqualToString:@"safepay"]) {
         // 支付宝
         [[AliPayManager shareAliPayManager] handleOpenURL:url];
-        
-        //
     } else {
         if ([[url absoluteString] hasPrefix:@"wx"]) {
             // 微信支付
+            [[WXPayManager shareWXPayManager] handleOpenURL:url];
         }
     }
     [self hookedApplication:application handleOpenURL:url];
@@ -78,20 +78,12 @@
     return YES;
 }
 
-
 #pragma mark - 默认
-- (BOOL)defaultApplication:(UIApplication*)application didFinishLaunchingWithOptions:(NSDictionary*)dic { return YES;
-}
+- (BOOL)defaultApplication:(UIApplication*)application didFinishLaunchingWithOptions:(NSDictionary*)dic { return YES;}
 
-- (BOOL)defaultApplication:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
-    return YES;
-}
+- (BOOL)defaultApplication:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {return YES;}
 
-- (BOOL)defaultApplication:(UIApplication *)application handleOpenURL:(NSURL *)url {
-    return YES;
-}
+- (BOOL)defaultApplication:(UIApplication *)application handleOpenURL:(NSURL *)url {return YES;}
 
--(BOOL)defaultApplication:(UIApplication*)application openURL:(NSURL *)url options:(NSDictionary<NSString*, id> *)options {
-    return YES;
-}
+-(BOOL)defaultApplication:(UIApplication*)application openURL:(NSURL *)url options:(NSDictionary<NSString*, id> *)options {return YES;}
 @end

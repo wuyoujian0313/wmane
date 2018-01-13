@@ -7,8 +7,5 @@
 
 #import <Foundation/Foundation.h>
 
-// AppDelegate的名称，即，main的第三个参数值
-#define AppDelegateClassName        @"CTAppController"
-
 @interface AIAppHook2Pay : NSObject
 @end

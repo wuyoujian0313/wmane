@@ -21,6 +21,8 @@
 		AF914F7220075E81006CDBCA /* ANEExtensionFunc.m in Sources */ = {isa = PBXBuildFile; fileRef = AF914F7020075E81006CDBCA /* ANEExtensionFunc.m */; };
 		AF914F7520076559006CDBCA /* APOrderInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = AF914F7320076558006CDBCA /* APOrderInfo.h */; };
 		AF914F7620076559006CDBCA /* APOrderInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = AF914F7420076558006CDBCA /* APOrderInfo.m */; };
+		AFC3306D2009F60100E16EAC /* GetRSARequest.h in Headers */ = {isa = PBXBuildFile; fileRef = AFC3306B2009F60100E16EAC /* GetRSARequest.h */; };
+		AFC3306E2009F60100E16EAC /* GetRSARequest.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC3306C2009F60100E16EAC /* GetRSARequest.m */; };
 		AFF3502D2005B51300807E17 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFF3502C2005B51300807E17 /* Foundation.framework */; };
 		AFF3502F2005B51300807E17 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFF3502E2005B51300807E17 /* CoreFoundation.framework */; };
 		AFF350312005B51300807E17 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFF350302005B51300807E17 /* UIKit.framework */; };
@@ -77,6 +79,8 @@
 		AF914F7020075E81006CDBCA /* ANEExtensionFunc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANEExtensionFunc.m; sourceTree = "<group>"; };
 		AF914F7320076558006CDBCA /* APOrderInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APOrderInfo.h; sourceTree = "<group>"; };
 		AF914F7420076558006CDBCA /* APOrderInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APOrderInfo.m; sourceTree = "<group>"; };
+		AFC3306B2009F60100E16EAC /* GetRSARequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GetRSARequest.h; sourceTree = "<group>"; };
+		AFC3306C2009F60100E16EAC /* GetRSARequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetRSARequest.m; sourceTree = "<group>"; };
 		AFF350292005B51300807E17 /* libwmpayane.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libwmpayane.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFF3502C2005B51300807E17 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AFF3502E2005B51300807E17 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
@@ -223,6 +227,8 @@
 				AF0E8B452009DC05002795C7 /* PayConstant.h */,
 				AF0E8B462009E565002795C7 /* AIAppHook2Pay.h */,
 				AF0E8B472009E565002795C7 /* AIAppHook2Pay.m */,
+				AFC3306B2009F60100E16EAC /* GetRSARequest.h */,
+				AFC3306C2009F60100E16EAC /* GetRSARequest.m */,
 				AFF350552005B51300807E17 /* Supporting Files */,
 			);
 			path = wmpayane;
@@ -281,6 +287,7 @@
 				AF0E8B482009E565002795C7 /* AIAppHook2Pay.h in Headers */,
 				AF914F6920075B61006CDBCA /* AliPayManager.h in Headers */,
 				AFF351192005F07D00807E17 /* ANETypeConversion.h in Headers */,
+				AFC3306D2009F60100E16EAC /* GetRSARequest.h in Headers */,
 				AFF3510E2005C2A700807E17 /* APRSASigner.h in Headers */,
 				AF4010DE20066BEC00A4D004 /* WXApi.h in Headers */,
 				AF914F7520076559006CDBCA /* APOrderInfo.h in Headers */,
@@ -389,6 +396,7 @@
 				AF0E8B492009E565002795C7 /* AIAppHook2Pay.m in Sources */,
 				AF914F7620076559006CDBCA /* APOrderInfo.m in Sources */,
 				AF914F6E20075B82006CDBCA /* WXPayManager.m in Sources */,
+				AFC3306E2009F60100E16EAC /* GetRSARequest.m in Sources */,
 				AFF3505A2005B51300807E17 /* wmpayane.m in Sources */,
 				AFF3510F2005C2A700807E17 /* APRSASigner.m in Sources */,
 				AF914F6A20075B61006CDBCA /* AliPayManager.m in Sources */,
@@ -463,6 +471,7 @@
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7DUX67X748;
 				DSTROOT = /tmp/wmpayane.dst;
@@ -501,6 +510,7 @@
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7DUX67X748;
 				DSTROOT = /tmp/wmpayane.dst;

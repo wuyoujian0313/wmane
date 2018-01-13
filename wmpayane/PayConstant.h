@@ -15,4 +15,6 @@
 typedef void(^PayCompletionBlock)(NSString *resultJson);
 
 
+
+
 #endif /* PayConstant_h */

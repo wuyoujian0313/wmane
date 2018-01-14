@@ -33,27 +33,32 @@
 }
 
 - (void)handleOpenURL:(NSURL *)url {
-    //__weak WXPayManager *wSelf = self;
     // 微信支付回调
     [WXApi handleOpenURL:url delegate:self];
 }
 
 #pragma mark - WXApiDelegate
 // 微信支付回调
--(void)onResp:(BaseResp*)resp {
+- (void)onResp:(BaseResp*)resp {
     if ([resp isKindOfClass:[PayResp class]]){
         PayResp*response=(PayResp*)resp;
+        
+        // WXSuccess           = 0,    /**< 成功    */
+        // WXErrCodeCommon     = -1,   /**< 普通错误类型    */
+        // WXErrCodeUserCancel = -2,   /**< 用户点击取消并返回    */
+        // WXErrCodeSentFail   = -3,   /**< 发送失败    */
+        // WXErrCodeAuthDeny   = -4,   /**< 授权失败    */
+        // WXErrCodeUnsupport  = -5,   /**< 微信不支持    */
         switch(response.errCode){
-                
-                // WXSuccess           = 0,    /**< 成功    */
-                // WXErrCodeCommon     = -1,   /**< 普通错误类型    */
-                // WXErrCodeUserCancel = -2,   /**< 用户点击取消并返回    */
-                // WXErrCodeSentFail   = -3,   /**< 发送失败    */
-                // WXErrCodeAuthDeny   = -4,   /**< 授权失败    */
-                // WXErrCodeUnsupport  = -5,   /**< 微信不支持    */
             case WXSuccess:
+                if (self.payFinishBlock) {
+                    self.payFinishBlock(@"{\"status\":\"success\"}");
+                }
                 break;
             case WXErrCodeUserCancel:
+                if (self.payFinishBlock) {
+                    self.payFinishBlock(@"{\"status\":\"cancel\"}");
+                }
                 break;
             default:
                 break;

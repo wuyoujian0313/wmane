@@ -13,6 +13,13 @@
 		AF4010DD20066BEC00A4D004 /* WechatAuthSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = AF4010D920066BEC00A4D004 /* WechatAuthSDK.h */; };
 		AF4010DE20066BEC00A4D004 /* WXApi.h in Headers */ = {isa = PBXBuildFile; fileRef = AF4010DA20066BEC00A4D004 /* WXApi.h */; };
 		AF4010DF20066BEC00A4D004 /* WXApiObject.h in Headers */ = {isa = PBXBuildFile; fileRef = AF4010DB20066BEC00A4D004 /* WXApiObject.h */; };
+		AF760E2D200B460400F869B1 /* TencentOpenAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF760E1E200B460400F869B1 /* TencentOpenAPI.framework */; };
+		AF760E2E200B460400F869B1 /* AIActionSheet.h in Headers */ = {isa = PBXBuildFile; fileRef = AF760E23200B460400F869B1 /* AIActionSheet.h */; };
+		AF760E2F200B460400F869B1 /* AIActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = AF760E24200B460400F869B1 /* AIActionSheet.m */; };
+		AF760E34200B460400F869B1 /* SharedDataModel.h in Headers */ = {isa = PBXBuildFile; fileRef = AF760E29200B460400F869B1 /* SharedDataModel.h */; };
+		AF760E35200B460400F869B1 /* SharedDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AF760E2A200B460400F869B1 /* SharedDataModel.m */; };
+		AF760E36200B460400F869B1 /* SharedManager.h in Headers */ = {isa = PBXBuildFile; fileRef = AF760E2B200B460400F869B1 /* SharedManager.h */; };
+		AF760E37200B460400F869B1 /* SharedManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AF760E2C200B460400F869B1 /* SharedManager.m */; };
 		AF914F6920075B61006CDBCA /* AliPayManager.h in Headers */ = {isa = PBXBuildFile; fileRef = AF914F6720075B61006CDBCA /* AliPayManager.h */; };
 		AF914F6A20075B61006CDBCA /* AliPayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AF914F6820075B61006CDBCA /* AliPayManager.m */; };
 		AF914F6D20075B82006CDBCA /* WXPayManager.h in Headers */ = {isa = PBXBuildFile; fileRef = AF914F6B20075B82006CDBCA /* WXPayManager.h */; };
@@ -71,6 +78,15 @@
 		AF4010D920066BEC00A4D004 /* WechatAuthSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
 		AF4010DA20066BEC00A4D004 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
 		AF4010DB20066BEC00A4D004 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		AF760E1E200B460400F869B1 /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TencentOpenAPI.framework; sourceTree = "<group>"; };
+		AF760E1F200B460400F869B1 /* TencentOpenApi_IOS_Bundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TencentOpenApi_IOS_Bundle.bundle; sourceTree = "<group>"; };
+		AF760E21200B460400F869B1 /* SharedUI.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SharedUI.bundle; sourceTree = "<group>"; };
+		AF760E23200B460400F869B1 /* AIActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIActionSheet.h; sourceTree = "<group>"; };
+		AF760E24200B460400F869B1 /* AIActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIActionSheet.m; sourceTree = "<group>"; };
+		AF760E29200B460400F869B1 /* SharedDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SharedDataModel.h; sourceTree = "<group>"; };
+		AF760E2A200B460400F869B1 /* SharedDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SharedDataModel.m; sourceTree = "<group>"; };
+		AF760E2B200B460400F869B1 /* SharedManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SharedManager.h; sourceTree = "<group>"; };
+		AF760E2C200B460400F869B1 /* SharedManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SharedManager.m; sourceTree = "<group>"; };
 		AF914F6720075B61006CDBCA /* AliPayManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AliPayManager.h; sourceTree = "<group>"; };
 		AF914F6820075B61006CDBCA /* AliPayManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AliPayManager.m; sourceTree = "<group>"; };
 		AF914F6B20075B82006CDBCA /* WXPayManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXPayManager.h; sourceTree = "<group>"; };
@@ -144,6 +160,7 @@
 				AFF350372005B51300807E17 /* SystemConfiguration.framework in Frameworks */,
 				AFF3502D2005B51300807E17 /* Foundation.framework in Frameworks */,
 				AFF350472005B51300807E17 /* AVFoundation.framework in Frameworks */,
+				AF760E2D200B460400F869B1 /* TencentOpenAPI.framework in Frameworks */,
 				AFF3503D2005B51300807E17 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -161,6 +178,37 @@
 				AF4010DB20066BEC00A4D004 /* WXApiObject.h */,
 			);
 			path = WechatSDK1.8.2;
+			sourceTree = "<group>";
+		};
+		AF760E1D200B460400F869B1 /* QQSDK */ = {
+			isa = PBXGroup;
+			children = (
+				AF760E1E200B460400F869B1 /* TencentOpenAPI.framework */,
+				AF760E1F200B460400F869B1 /* TencentOpenApi_IOS_Bundle.bundle */,
+			);
+			path = QQSDK;
+			sourceTree = "<group>";
+		};
+		AF760E20200B460400F869B1 /* share_src */ = {
+			isa = PBXGroup;
+			children = (
+				AF760E21200B460400F869B1 /* SharedUI.bundle */,
+				AF760E22200B460400F869B1 /* src */,
+			);
+			path = share_src;
+			sourceTree = "<group>";
+		};
+		AF760E22200B460400F869B1 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				AF760E23200B460400F869B1 /* AIActionSheet.h */,
+				AF760E24200B460400F869B1 /* AIActionSheet.m */,
+				AF760E29200B460400F869B1 /* SharedDataModel.h */,
+				AF760E2A200B460400F869B1 /* SharedDataModel.m */,
+				AF760E2B200B460400F869B1 /* SharedManager.h */,
+				AF760E2C200B460400F869B1 /* SharedManager.m */,
+			);
+			path = src;
 			sourceTree = "<group>";
 		};
 		AFF350202005B51200807E17 = {
@@ -211,6 +259,8 @@
 		AFF350542005B51300807E17 /* wmane */ = {
 			isa = PBXGroup;
 			children = (
+				AF760E1D200B460400F869B1 /* QQSDK */,
+				AF760E20200B460400F869B1 /* share_src */,
 				AF4010D620066BEC00A4D004 /* WechatSDK1.8.2 */,
 				AFF351122005F07D00807E17 /* ANEHelper */,
 				AFF3506A2005C2A700807E17 /* alipay */,
@@ -285,7 +335,9 @@
 			files = (
 				AF914F6D20075B82006CDBCA /* WXPayManager.h in Headers */,
 				AF0E8B482009E565002795C7 /* AIAppHook2Pay.h in Headers */,
+				AF760E2E200B460400F869B1 /* AIActionSheet.h in Headers */,
 				AF914F6920075B61006CDBCA /* AliPayManager.h in Headers */,
+				AF760E34200B460400F869B1 /* SharedDataModel.h in Headers */,
 				AFF351192005F07D00807E17 /* ANETypeConversion.h in Headers */,
 				AFC3306D2009F60100E16EAC /* GetRSARequest.h in Headers */,
 				AFF3510E2005C2A700807E17 /* APRSASigner.h in Headers */,
@@ -296,6 +348,7 @@
 				AFF350582005B51300807E17 /* wmane.h in Headers */,
 				AF4010DD20066BEC00A4D004 /* WechatAuthSDK.h in Headers */,
 				AF914F7120075E81006CDBCA /* ANEExtensionFunc.h in Headers */,
+				AF760E36200B460400F869B1 /* SharedManager.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,11 +450,14 @@
 				AF914F7620076559006CDBCA /* APOrderInfo.m in Sources */,
 				AF914F6E20075B82006CDBCA /* WXPayManager.m in Sources */,
 				AFC3306E2009F60100E16EAC /* GetRSARequest.m in Sources */,
+				AF760E2F200B460400F869B1 /* AIActionSheet.m in Sources */,
 				AFF3505A2005B51300807E17 /* wmane.m in Sources */,
 				AFF3510F2005C2A700807E17 /* APRSASigner.m in Sources */,
+				AF760E35200B460400F869B1 /* SharedDataModel.m in Sources */,
 				AF914F6A20075B61006CDBCA /* AliPayManager.m in Sources */,
 				AF914F7220075E81006CDBCA /* ANEExtensionFunc.m in Sources */,
 				AFF351112005C2A700807E17 /* openssl_wrapper.m in Sources */,
+				AF760E37200B460400F869B1 /* SharedManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -479,6 +535,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/wmane/alipay",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/wmane/QQSDK",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_ENABLE_CPP_EXCEPTIONS = YES;
@@ -518,6 +575,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/wmane/alipay",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/wmane/QQSDK",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_ENABLE_CPP_EXCEPTIONS = YES;

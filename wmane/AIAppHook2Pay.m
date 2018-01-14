@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "AIAppHook2Pay.h"
 #import "AliPayManager.h"
+#import "SharedManager.h"
 #import "WXPayManager.h"
 #import <objc/runtime.h>
 
@@ -60,6 +61,8 @@
             [[WXPayManager shareWXPayManager] handleOpenURL:url];
         }
     }
+    
+    [[SharedManager sharedManager] handleOpenURL:url];
     [self hookedApplication:application handleOpenURL:url];
 }
 

@@ -70,9 +70,23 @@ void ContextInitializer(void* extData, const uint8_t* ctxType, FREContext ctx, u
 */
 void ContextFinalizer(FREContext ctx);
 
-
-ANE_FUNCTION(registerWXSDK);
+ANE_FUNCTION(registerWXPaySDK);
 ANE_FUNCTION(registerAlipaySDK);
+
+// 注册分享sdk
+/*
+ 参数采用json字符串(UTF-8编码)传递
+ 例如：
+ [{"appId":"*****","appSecret":"***"},{"appId":"*****","appSecret":"***"}]
+ */
+ANE_FUNCTION(registerShareSDKs);
+
+
+ANE_FUNCTION(sharing_function_text);
+ANE_FUNCTION(sharing_function_link);
+ANE_FUNCTION(sharing_function_image);
+ANE_FUNCTION(sharing_function_image_url);
+ANE_FUNCTION(sharing_function_is_installed);
 
 // 支付接口，参数采用json字符串(UTF-8编码)传递；
 /*
@@ -88,3 +102,9 @@ ANE_FUNCTION(registerAlipaySDK);
  */
 ANE_FUNCTION(alipay);
 ANE_FUNCTION(wxpay);
+
+ANE_FUNCTION(login_function_qq);
+ANE_FUNCTION(login_function_wx);
+
+ANE_FUNCTION(playAV);
+ANE_FUNCTION(playAVForLocal);

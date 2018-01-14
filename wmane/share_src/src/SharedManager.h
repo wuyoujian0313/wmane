@@ -35,6 +35,7 @@ typedef void(^AISharedFinishBlock)(NSInteger statusCode,id resp);
 // 单例模式类
 @interface SharedManager : NSObject
 + (SharedManager *)sharedManager;
+- (BOOL)isInstallShareApps;
 
 - (void)registerSharedPlatforms:(NSArray<AISharedPlatformSDKInfo*> *)platforms;
 - (void)loginByWX:(AISharedFinishBlock)finishBlock;

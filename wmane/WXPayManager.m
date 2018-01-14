@@ -30,6 +30,8 @@
 - (void)registerSDK:(NSString*)appId appSecret:(NSString*)appSecret {
     _appId = appId;
     _appSecret = appSecret;
+    
+    [WXApi registerApp:_appId enableMTA:NO];
 }
 
 - (void)handleOpenURL:(NSURL *)url {

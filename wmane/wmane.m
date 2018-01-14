@@ -86,9 +86,20 @@ void ContextInitializer(void* extData, const uint8_t* ctxType, FREContext ctx, u
      */
     static FRENamedFunction func[] = 
     {
-        MAP_FUNCTION(registerWXSDK,NULL),
+        MAP_FUNCTION(registerWXPaySDK,NULL),
         MAP_FUNCTION(registerAlipaySDK,NULL),
+        MAP_FUNCTION(registerShareSDKs, NULL),
+        MAP_FUNCTION(sharing_function_is_installed, NULL),
         MAP_FUNCTION(alipay,NULL),
+        MAP_FUNCTION(wxpay,NULL),
+        MAP_FUNCTION(sharing_function_text,NULL),
+        MAP_FUNCTION(sharing_function_link,NULL),
+        MAP_FUNCTION(sharing_function_image,NULL),
+        MAP_FUNCTION(sharing_function_image_url,NULL),
+        MAP_FUNCTION(login_function_qq,NULL),
+        MAP_FUNCTION(login_function_wx,NULL),
+        MAP_FUNCTION(playAV, NULL),
+        MAP_FUNCTION(playAVForLocal, NULL),
     };
     
     *numFunctionsToTest = sizeof(func) / sizeof(FRENamedFunction);
@@ -112,12 +123,20 @@ void ContextFinalizer(FREContext ctx)
     return;
 }
 
-ANE_FUNCTION(registerWXSDK) {
-    return [globalANEExFuc registerWXSDK:argv[0] appSecret:argv[1]];
+ANE_FUNCTION(registerWXPaySDK) {
+    return [globalANEExFuc registerWXPaySDK:argv[0] appSecret:argv[1]];
 }
 
 ANE_FUNCTION(registerAlipaySDK) {
     return [globalANEExFuc registerAlipaySDK:argv[0] appSecret:argv[1]];
+}
+
+ANE_FUNCTION(registerShareSDKs) {
+    return [globalANEExFuc registerShareSDKs:argv[0]];
+}
+
+ANE_FUNCTION(sharing_function_is_installed) {
+    return [globalANEExFuc isAppInstalled];
 }
 
 ANE_FUNCTION(alipay) {
@@ -126,5 +145,37 @@ ANE_FUNCTION(alipay) {
 
 ANE_FUNCTION(wxpay) {
     return [globalANEExFuc wxpay:argv[0]];
+}
+
+ANE_FUNCTION(sharing_function_text) {
+    return [globalANEExFuc sendText:argv[0]];
+}
+
+ANE_FUNCTION(sharing_function_link) {
+    return [globalANEExFuc sendLinkTitle:argv[0] text:argv[1] url:argv[2]];
+}
+
+ANE_FUNCTION(sharing_function_image) {
+    return [globalANEExFuc sendImage:argv[0]];
+}
+
+ANE_FUNCTION(sharing_function_image_url) {
+    return [globalANEExFuc sendImageUrl:argv[0]];
+}
+
+ANE_FUNCTION(login_function_qq) {
+    return [globalANEExFuc loginByQQ];
+}
+
+ANE_FUNCTION(login_function_wx) {
+    return [globalANEExFuc loginByWX];
+}
+
+ANE_FUNCTION(playAV) {
+    return [globalANEExFuc playAV:argv[0]];
+}
+
+ANE_FUNCTION(playAVForLocal) {
+    return [globalANEExFuc playAVForLocal:argv[0]];
 }
 

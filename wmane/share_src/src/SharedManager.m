@@ -67,7 +67,7 @@ typedef NS_ENUM(NSInteger, AISharedPlatformScene) {
 }
 @end
 
-@interface SharedManager ()< AIActionSheetDelegate ,TencentSessionDelegate,WXApiDelegate,QQApiInterfaceDelegate>
+@interface SharedManager ()< AIActionSheetDelegate,TencentSessionDelegate,WXApiDelegate,QQApiInterfaceDelegate>
 @property (nonatomic, strong) AIActionSheet                               *actionSheet;
 @property (nonatomic, strong) NSMutableArray<inline_SharedPlatformScene*> *scenes;
 @property (nonatomic, strong) SharedDataModel                             *sharedData;
@@ -242,7 +242,7 @@ typedef NS_ENUM(NSInteger, AISharedPlatformScene) {
 }
 
 
-- (BOOL)isInstallSharedApp {
+- (BOOL)isInstallShareApps {
     return [WXApi isWXAppInstalled] || [QQApiInterface isQQInstalled];
 }
 

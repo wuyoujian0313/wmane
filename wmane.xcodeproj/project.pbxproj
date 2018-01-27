@@ -30,6 +30,10 @@
 		AF914F7620076559006CDBCA /* APOrderInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = AF914F7420076558006CDBCA /* APOrderInfo.m */; };
 		AFC3306D2009F60100E16EAC /* GetRSARequest.h in Headers */ = {isa = PBXBuildFile; fileRef = AFC3306B2009F60100E16EAC /* GetRSARequest.h */; };
 		AFC3306E2009F60100E16EAC /* GetRSARequest.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC3306C2009F60100E16EAC /* GetRSARequest.m */; };
+		AFE6AB48201CD36100A2A03D /* NSData+Crypto.m in Sources */ = {isa = PBXBuildFile; fileRef = AFE6AB46201CD36000A2A03D /* NSData+Crypto.m */; };
+		AFE6AB49201CD36100A2A03D /* NSData+Crypto.h in Headers */ = {isa = PBXBuildFile; fileRef = AFE6AB47201CD36100A2A03D /* NSData+Crypto.h */; };
+		AFE6AB4C201CD62700A2A03D /* AESEncrypt.h in Headers */ = {isa = PBXBuildFile; fileRef = AFE6AB4A201CD62700A2A03D /* AESEncrypt.h */; };
+		AFE6AB4D201CD62700A2A03D /* AESEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = AFE6AB4B201CD62700A2A03D /* AESEncrypt.m */; };
 		AFF3502D2005B51300807E17 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFF3502C2005B51300807E17 /* Foundation.framework */; };
 		AFF3502F2005B51300807E17 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFF3502E2005B51300807E17 /* CoreFoundation.framework */; };
 		AFF350312005B51300807E17 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFF350302005B51300807E17 /* UIKit.framework */; };
@@ -97,6 +101,10 @@
 		AF914F7420076558006CDBCA /* APOrderInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APOrderInfo.m; sourceTree = "<group>"; };
 		AFC3306B2009F60100E16EAC /* GetRSARequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GetRSARequest.h; sourceTree = "<group>"; };
 		AFC3306C2009F60100E16EAC /* GetRSARequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetRSARequest.m; sourceTree = "<group>"; };
+		AFE6AB46201CD36000A2A03D /* NSData+Crypto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Crypto.m"; sourceTree = "<group>"; };
+		AFE6AB47201CD36100A2A03D /* NSData+Crypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Crypto.h"; sourceTree = "<group>"; };
+		AFE6AB4A201CD62700A2A03D /* AESEncrypt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AESEncrypt.h; sourceTree = "<group>"; };
+		AFE6AB4B201CD62700A2A03D /* AESEncrypt.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AESEncrypt.m; sourceTree = "<group>"; };
 		AFF350292005B51300807E17 /* libwmane.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libwmane.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFF3502C2005B51300807E17 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AFF3502E2005B51300807E17 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
@@ -309,10 +317,14 @@
 		AFF350BB2005C2A700807E17 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				AFE6AB47201CD36100A2A03D /* NSData+Crypto.h */,
+				AFE6AB46201CD36000A2A03D /* NSData+Crypto.m */,
 				AFF350BC2005C2A700807E17 /* APRSASigner.h */,
 				AFF350BD2005C2A700807E17 /* APRSASigner.m */,
 				AFF350BE2005C2A700807E17 /* openssl_wrapper.h */,
 				AFF350BF2005C2A700807E17 /* openssl_wrapper.m */,
+				AFE6AB4A201CD62700A2A03D /* AESEncrypt.h */,
+				AFE6AB4B201CD62700A2A03D /* AESEncrypt.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -339,11 +351,13 @@
 				AF914F6920075B61006CDBCA /* AliPayManager.h in Headers */,
 				AF760E34200B460400F869B1 /* SharedDataModel.h in Headers */,
 				AFF351192005F07D00807E17 /* ANETypeConversion.h in Headers */,
+				AFE6AB49201CD36100A2A03D /* NSData+Crypto.h in Headers */,
 				AFC3306D2009F60100E16EAC /* GetRSARequest.h in Headers */,
 				AFF3510E2005C2A700807E17 /* APRSASigner.h in Headers */,
 				AF4010DE20066BEC00A4D004 /* WXApi.h in Headers */,
 				AF914F7520076559006CDBCA /* APOrderInfo.h in Headers */,
 				AF4010DF20066BEC00A4D004 /* WXApiObject.h in Headers */,
+				AFE6AB4C201CD62700A2A03D /* AESEncrypt.h in Headers */,
 				AFF351102005C2A700807E17 /* openssl_wrapper.h in Headers */,
 				AFF350582005B51300807E17 /* wmane.h in Headers */,
 				AF4010DD20066BEC00A4D004 /* WechatAuthSDK.h in Headers */,
@@ -446,8 +460,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFF3511A2005F07D00807E17 /* ANETypeConversion.m in Sources */,
+				AFE6AB48201CD36100A2A03D /* NSData+Crypto.m in Sources */,
 				AF0E8B492009E565002795C7 /* AIAppHook2Pay.m in Sources */,
 				AF914F7620076559006CDBCA /* APOrderInfo.m in Sources */,
+				AFE6AB4D201CD62700A2A03D /* AESEncrypt.m in Sources */,
 				AF914F6E20075B82006CDBCA /* WXPayManager.m in Sources */,
 				AFC3306E2009F60100E16EAC /* GetRSARequest.m in Sources */,
 				AF760E2F200B460400F869B1 /* AIActionSheet.m in Sources */,

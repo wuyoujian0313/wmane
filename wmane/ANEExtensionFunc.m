@@ -17,6 +17,9 @@
 #import <MediaPlayer/MediaPlayer.h>
 #import <AVKit/AVKit.h>
 #import <AVFoundation/AVFoundation.h>
+#import "AESEncrypt.h"
+
+#define kEncryptKey @"_weimeitiancheng"
 
 
 #define DISPATCH_STATUS_EVENT(extensionContext, code, status) FREDispatchStatusEventAsync((extensionContext), (uint8_t*)code, (uint8_t*)status)
@@ -182,6 +185,29 @@
     
 }
 
+- (FREObject)encrypt:(FREObject)text {
+    NSString *value = nil;
+    FREResult ret = [_converter FREObject2NString:text toNString:&value];
+    if (ret == FRE_OK) {
+       NSString *content = [AESEncrypt encrypt:value key:kEncryptKey];
+        DISPATCH_STATUS_EVENT(self.context, [@"encrypt" UTF8String], [content UTF8String]);
+    }
+    
+    return NULL;
+}
+
+
+- (FREObject)decrypt:(FREObject)text {
+    NSString *value = nil;
+    FREResult ret = [_converter FREObject2NString:text toNString:&value];
+    if (ret == FRE_OK) {
+        NSString *content = [AESEncrypt decrypt:value key:kEncryptKey];
+        DISPATCH_STATUS_EVENT(self.context, [@"decrypt" UTF8String], [content UTF8String]);
+    }
+    
+    return NULL;
+}
+
 // 发送远程图片
 -(FREObject)sendImageUrl:(FREObject)imgUrl {
     
@@ -314,6 +340,7 @@
     UIViewController *rootVC = application.keyWindow.rootViewController;
     [rootVC presentViewController:_avPlayer animated:YES completion:nil];
 }
+
 
 
 @end

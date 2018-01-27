@@ -125,8 +125,14 @@
                                  orderInfoEncoded, signedString];
         
         // NOTE: 调用支付结果开始支付
+        AliPayManager *wSelf = self;
         [[AlipaySDK defaultService] payOrder:orderString fromScheme:appScheme callback:^(NSDictionary *resultDic) {
             NSLog(@"reslut = %@",resultDic);
+            
+            AliPayManager *sSelf = wSelf;
+            if (sSelf.payFinishBlock) {
+                sSelf.payFinishBlock(@"0");
+            }
         }];
     }
 }

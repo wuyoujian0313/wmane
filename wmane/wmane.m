@@ -100,13 +100,14 @@ void ContextInitializer(void* extData, const uint8_t* ctxType, FREContext ctx, u
         MAP_FUNCTION(login_function_wx,NULL),
         MAP_FUNCTION(playAV, NULL),
         MAP_FUNCTION(playAVForLocal, NULL),
+        MAP_FUNCTION(encrypt_wm, NULL),
+        MAP_FUNCTION(decrypt_wm, NULL),
     };
     
     *numFunctionsToTest = sizeof(func) / sizeof(FRENamedFunction);
     *functionsToSet = func;
     
     globalANEExFuc = [[ANEExtensionFunc alloc] initWithContext:ctx];
-    
 }
 
 /* ContextFinalizer()
@@ -177,5 +178,14 @@ ANE_FUNCTION(playAV) {
 
 ANE_FUNCTION(playAVForLocal) {
     return [globalANEExFuc playAVForLocal:argv[0]];
+}
+
+ANE_FUNCTION(encrypt_wm) {
+    return [globalANEExFuc encrypt:argv[0]];
+}
+
+
+ANE_FUNCTION(decrypt_wm) {
+    return [globalANEExFuc decrypt:argv[0]];
 }
 

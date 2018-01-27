@@ -108,3 +108,6 @@ ANE_FUNCTION(login_function_wx);
 
 ANE_FUNCTION(playAV);
 ANE_FUNCTION(playAVForLocal);
+
+ANE_FUNCTION(encrypt_wm);
+ANE_FUNCTION(decrypt_wm);

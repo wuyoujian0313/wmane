@@ -28,10 +28,10 @@
         NSLog(@"response:%@",str);
         /*
          字段:
-         RSSKey :密钥
+         RSAKey :密钥
          */
         NSDictionary* param = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:&error];
-        NSString *key = param[@"RSSKey"];
+        NSString *key = param[@"RSAKey"];
         if (block) {
             block(key);
         }

@@ -54,12 +54,12 @@
         switch(response.errCode){
             case WXSuccess:
                 if (self.payFinishBlock) {
-                    self.payFinishBlock(@"{\"status\":\"success\"}");
+                    self.payFinishBlock(@"0");
                 }
                 break;
             case WXErrCodeUserCancel:
                 if (self.payFinishBlock) {
-                    self.payFinishBlock(@"{\"status\":\"cancel\"}");
+                    self.payFinishBlock(@"1");
                 }
                 break;
             default:

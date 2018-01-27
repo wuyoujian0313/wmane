@@ -39,4 +39,7 @@
 - (FREObject)playAV:(FREObject)text;
 - (FREObject)playAVForLocal:(FREObject)text;
 
+- (FREObject)encrypt:(FREObject)text;
+- (FREObject)decrypt:(FREObject)text;
+
 @end

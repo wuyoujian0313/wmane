@@ -12,6 +12,7 @@
 @interface WXPayManager ()<WXApiDelegate>
 @property (nonatomic, copy) NSString *appId;
 @property (nonatomic, copy) NSString *appSecret;
+@property (nonatomic, copy) NSString *partner;
 @property (nonatomic, copy) NSString *payJson;
 @property (nonatomic, copy) PayCompletionBlock  payFinishBlock;
 @end
@@ -27,9 +28,10 @@
     return obj;
 }
 
-- (void)registerSDK:(NSString*)appId appSecret:(NSString*)appSecret {
+- (void)registerSDK:(NSString*)appId appSecret:(NSString*)appSecret partner:(NSString *)partner {
     _appId = appId;
     _appSecret = appSecret;
+    _partner = partner;
     
     [WXApi registerApp:_appId enableMTA:NO];
 }
@@ -85,7 +87,6 @@
     // 预下单接口调用
 #define kNetworkServerIP            @"http://101.69.181.210:80"
 #define kNetworkAPIServer           kNetworkServerIP@"/tuwen_web"
-#define kWeiXinBusinessNo           @""
     //weiXinToPay/wxToPay
     NSURL *url = [NSURL URLWithString:kNetworkAPIServer@"weiXinToPay/wxToPay"];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
@@ -97,7 +98,7 @@
                           @"1122",@"userId",
                           _appId,@"appid",
                           _appSecret,@"appsecret",
-                          kWeiXinBusinessNo,@"partner",
+                          _partner,@"partner",
                           param[@"price"],@"money",
                           @"WEB",@"device_info",
                           param[@"goodsDesc"],@"body",

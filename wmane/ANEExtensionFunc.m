@@ -52,13 +52,15 @@
     return NULL;
 }
 
-- (FREObject)registerWXPaySDK:(FREObject)appId appSecret:(FREObject)appSecret {
+- (FREObject)registerWXPaySDK:(FREObject)appId appSecret:(FREObject)appSecret partner:(FREObject)partner {
     NSString *value = nil;
     NSString *value1 = nil;
+    NSString *value2 = nil;
     FREResult ret = [_converter FREObject2NString:appId toNString:&value];
     [_converter FREObject2NString:appSecret toNString:&value1];
+    [_converter FREObject2NString:partner toNString:&value2];
     if (ret == FRE_OK) {
-        [[WXPayManager shareWXPayManager] registerSDK:value appSecret:value1];
+        [[WXPayManager shareWXPayManager] registerSDK:value appSecret:value1 partner:value2];
     }
     
     return NULL;

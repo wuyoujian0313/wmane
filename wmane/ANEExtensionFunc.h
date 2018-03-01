@@ -14,7 +14,7 @@
 
 - (instancetype)initWithContext:(FREContext)extensionContext;
 
-- (FREObject)registerWXPaySDK:(FREObject)appId appSecret:(FREObject)appSecret;
+- (FREObject)registerWXPaySDK:(FREObject)appId appSecret:(FREObject)appSecret partner:(FREObject)partner;
 - (FREObject)registerShareSDKs:(FREObject)sdksJson;
 - (FREObject)registerAlipaySDK:(FREObject)appId appSecret:(FREObject)appSecret;
 - (FREObject)isAppInstalled;

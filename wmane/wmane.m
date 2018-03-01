@@ -125,7 +125,7 @@ void ContextFinalizer(FREContext ctx)
 }
 
 ANE_FUNCTION(registerWXPaySDK) {
-    return [globalANEExFuc registerWXPaySDK:argv[0] appSecret:argv[1]];
+    return [globalANEExFuc registerWXPaySDK:argv[0] appSecret:argv[1] partner:argv[2]];
 }
 
 ANE_FUNCTION(registerAlipaySDK) {

@@ -10,7 +10,7 @@
 
 @interface WXPayManager : NSObject
 + (WXPayManager*)shareWXPayManager;
-- (void)registerSDK:(NSString*)appId appSecret:(NSString*)appSecret;
+- (void)registerSDK:(NSString*)appId appSecret:(NSString*)appSecret partner:(NSString *)partner;
 
 - (void)pay:(NSString *)payJson completion:(PayCompletionBlock)block;
 - (void)handleOpenURL:(NSURL *)url;

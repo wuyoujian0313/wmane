@@ -10,8 +10,8 @@
 #import "SharedDataModel.h"
 
 typedef NS_ENUM(NSInteger, AIPlatform) {
-    AIPlatformWechat = 100,
-    AIPlatformQQ,
+    AIPlatformWechat = 0,
+    AIPlatformQQ = 1,
 };
 
 typedef NS_ENUM(NSInteger, AIInvokingStatusCode) {

@@ -46,6 +46,31 @@
     NSString *value = nil;
     FREResult ret = [_converter FREObject2NString:sdksJson toNString:&value];
     if (ret == FRE_OK) {
+        NSError *error = nil;
+        NSData *jsonData = [value dataUsingEncoding:NSUTF8StringEncoding];
+        NSArray* sdks = [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingAllowFragments error:&error];
+        
+        /*
+         {
+         appId = 1106347438;
+         appSecret = NT66deIQ4RNl5gDA;
+         platform = 1;
+         }
+         */
+        NSMutableArray *arr = [[NSMutableArray alloc] initWithCapacity:0];
+        for (NSDictionary *dic in sdks) {
+            AISharedPlatformSDKInfo *info = [[AISharedPlatformSDKInfo alloc] init];
+            info.platform = dic[@"platform"];
+            info.appId = dic[@"appId"];
+            info.appSecret = dic[@"appSecret"];
+            info.redirectURI = nil;
+            
+            [arr addObject:info];
+        }
+        
+        if ([arr count] > 0) {
+             [[SharedManager sharedManager] registerSharedPlatforms:arr];
+        }
     }
     
     

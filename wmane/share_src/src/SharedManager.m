@@ -106,6 +106,7 @@ typedef NS_ENUM(NSInteger, AISharedPlatformScene) {
 }
 
 - (BOOL)handleOpenURL:(NSURL*)url {
+    
     for (AISharedPlatformSDKInfo* sdk in _platforms) {
         if ([[url absoluteString] hasPrefix:[sdk appId]]) {
             //微信回调

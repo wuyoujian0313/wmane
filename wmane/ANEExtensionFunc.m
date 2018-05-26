@@ -60,7 +60,7 @@
         NSMutableArray *arr = [[NSMutableArray alloc] initWithCapacity:0];
         for (NSDictionary *dic in sdks) {
             AISharedPlatformSDKInfo *info = [[AISharedPlatformSDKInfo alloc] init];
-            info.platform = dic[@"platform"];
+            info.platform = [dic[@"platform"] integerValue];
             info.appId = dic[@"appId"];
             info.appSecret = dic[@"appSecret"];
             info.redirectURI = nil;
@@ -280,22 +280,18 @@
 }
 
 - (FREObject)loginByQQ {
-    //    id delegate = [UIApplication sharedApplication].delegate;
-    //    NSString *appName = NSStringFromClass([delegate class]);
-    //
-    //    DISPATCH_STATUS_EVENT(self.context,[@"login_function_qq" UTF8String],[appName UTF8String]);
+//    id delegate = [UIApplication sharedApplication].delegate;
+//    NSString *appName = NSStringFromClass([delegate class]);
+//    DISPATCH_STATUS_EVENT(self.context,[@"login_function_qq" UTF8String],[appName UTF8String]);
     
     [[SharedManager sharedManager] loginByQQ:^(NSInteger statusCode, id resp) {
         //
         if ([resp isKindOfClass:[NSString class]]) {
             NSString *openId = resp;
-            
             NSString *message = [openId stringByAppendingFormat:@"###%@",openId];
-            
             DISPATCH_STATUS_EVENT(self.context,[@"login_function_qq" UTF8String],[message UTF8String]);
-            
         }
-        
+
     }];
     return NULL;
 }

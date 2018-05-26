@@ -39,7 +39,8 @@
 + (void)load {
     [AIAppHook2Pay hookMehod:@selector(application:didFinishLaunchingWithOptions:) andDef:@selector(defaultApplication:didFinishLaunchingWithOptions:) andNew:@selector(hookedApplication:didFinishLaunchingWithOptions:)];
     
-    [AIAppHook2Pay hookMehod:@selector(application:handleOpenURL:) andDef:@selector(defaultApplication:handleOpenURL:) andNew:@selector(hookedApplication:handleOpenURL:)];
+    [AIAppHook2Pay hookMehod:@selector(application:handleOpenURL:) andDef:@selector(defaultApplication:handleOpenURL:)
+        andNew:@selector(hookedApplication:handleOpenURL:)];
     
     [AIAppHook2Pay hookMehod:@selector(application:openURL:sourceApplication:annotation:) andDef:@selector(defaultApplication:openURL:sourceApplication:annotation:) andNew:@selector(hookedApplication:openURL:sourceApplication:annotation:)];
     
@@ -51,7 +52,8 @@
     return YES;
 }
 
-- (void)handleApplication:(UIApplication *)application openURL:(NSURL *)url {
+- (BOOL)hookedApplication:(UIApplication *)application handleOpenURL:(NSURL *)url {
+    [self hookedApplication:application handleOpenURL:url];
     if ([url.host isEqualToString:@"safepay"]) {
         // 支付宝
         [[AliPayManager shareAliPayManager] handleOpenURL:url];
@@ -61,24 +63,36 @@
             [[WXPayManager shareWXPayManager] handleOpenURL:url];
         }
     }
-    
-    [[SharedManager sharedManager] handleOpenURL:url];
-    [self hookedApplication:application handleOpenURL:url];
-}
-
-- (BOOL)hookedApplication:(UIApplication *)application handleOpenURL:(NSURL *)url {
-    [self handleApplication:application openURL:url];
-    return YES;
+    return [[SharedManager sharedManager] handleOpenURL:url];
 }
 
 - (BOOL)hookedApplication:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
-    [self handleApplication:application openURL:url];
-    return YES;
+    [self hookedApplication:application openURL:url sourceApplication:sourceApplication annotation:annotation];
+    if ([url.host isEqualToString:@"safepay"]) {
+        // 支付宝
+        [[AliPayManager shareAliPayManager] handleOpenURL:url];
+    } else {
+        if ([[url absoluteString] hasPrefix:@"wx"]) {
+            // 微信支付
+            [[WXPayManager shareWXPayManager] handleOpenURL:url];
+        }
+    }
+    return [[SharedManager sharedManager] handleOpenURL:url];
 }
 
 - (BOOL)hookedApplication:(UIApplication *)application openURL:(NSURL *)url options:(NSDictionary<NSString*, id> *)options {
-    [self handleApplication:application openURL:url];
-    return YES;
+    [self hookedApplication:application openURL:url options:options];
+   
+    if ([url.host isEqualToString:@"safepay"]) {
+        // 支付宝
+        [[AliPayManager shareAliPayManager] handleOpenURL:url];
+    } else {
+        if ([[url absoluteString] hasPrefix:@"wx"]) {
+            // 微信支付
+            [[WXPayManager shareWXPayManager] handleOpenURL:url];
+        }
+    }
+    return [[SharedManager sharedManager] handleOpenURL:url];
 }
 
 #pragma mark - 默认

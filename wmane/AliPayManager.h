@@ -13,8 +13,7 @@
 + (AliPayManager*)shareAliPayManager;
 
 - (void)registerSDK:(NSString*)appId appSecret:(NSString*)appSecret;
-- (void)pay:(NSString *)payJson completion:(PayCompletionBlock)block;
-
+- (void)pay:(NSString *)orderString completion:(PayCompletionBlock)block;
 - (void)handleOpenURL:(NSURL *)url;
 
 @end

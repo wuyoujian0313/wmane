@@ -24,8 +24,8 @@
 
 #define DISPATCH_STATUS_EVENT(extensionContext, code, status) FREDispatchStatusEventAsync((extensionContext), (uint8_t*)code, (uint8_t*)status)
 
+extern FREContext context;
 @interface ANEExtensionFunc ()
-@property (nonatomic, assign) FREContext context;
 @property (nonatomic, strong) ANETypeConversion *converter;
 @property (nonatomic, strong) AVPlayerViewController * avPlayer;
 @property (nonatomic, strong) MPMoviePlayerViewController *moviePlayer;
@@ -36,7 +36,7 @@
 - (instancetype)initWithContext:(FREContext)extensionContext {
     self = [super init];
     if (self) {
-        self.context = extensionContext;
+        //context = extensionContext;
         self.converter = [[ANETypeConversion alloc] init];
     }
     return self;
@@ -113,11 +113,9 @@
     NSString *value = nil;
     FREResult ret = [_converter FREObject2NString:payJson toNString:&value];
     if (ret == FRE_OK) {
-        __weak ANEExtensionFunc *wSelf = self;
         [[AliPayManager shareAliPayManager] pay:value completion:^(NSString *resultJson) {
             //
-            ANEExtensionFunc *sSelf = wSelf;
-            DISPATCH_STATUS_EVENT(sSelf.context, [@"alipay" UTF8String], [resultJson UTF8String]);
+            DISPATCH_STATUS_EVENT(context, [@"alipay" UTF8String], [resultJson UTF8String]);
         }];
     }
     return NULL;
@@ -127,11 +125,9 @@
     NSString *value = nil;
     FREResult ret = [_converter FREObject2NString:payJson toNString:&value];
     if (ret == FRE_OK) {
-        __weak ANEExtensionFunc *wSelf = self;
         [[WXPayManager shareWXPayManager] pay:value completion:^(NSString *resultJson) {
             //
-            ANEExtensionFunc *sSelf = wSelf;
-            DISPATCH_STATUS_EVENT(sSelf.context, [@"wxpay" UTF8String], [resultJson UTF8String]);
+            DISPATCH_STATUS_EVENT(context, [@"wxpay" UTF8String], [resultJson UTF8String]);
         }];
     }
     return NULL;
@@ -179,7 +175,7 @@
         [[SharedManager sharedManager] sharedData:model finish:^(NSInteger statusCode, id resp) {
             //
             NSString *strstatusCode = [NSString stringWithFormat:@"%ld",(long)statusCode];
-            DISPATCH_STATUS_EVENT(self.context, [@"shareCallback" UTF8String], [strstatusCode UTF8String]);
+            DISPATCH_STATUS_EVENT(context, [@"shareCallback" UTF8String], [strstatusCode UTF8String]);
         }];
         
     }
@@ -203,7 +199,7 @@
         [[SharedManager sharedManager] sharedData:model finish:^(NSInteger statusCode, id resp) {
             //
             NSString *strstatusCode = [NSString stringWithFormat:@"%ld",(long)statusCode];
-            DISPATCH_STATUS_EVENT(self.context, [@"shareCallback" UTF8String], [strstatusCode UTF8String]);
+            DISPATCH_STATUS_EVENT(context, [@"shareCallback" UTF8String], [strstatusCode UTF8String]);
         }];
         
     }
@@ -217,7 +213,7 @@
     FREResult ret = [_converter FREObject2NString:text toNString:&value];
     if (ret == FRE_OK) {
        NSString *content = [AESEncrypt encrypt:value key:kEncryptKey];
-        DISPATCH_STATUS_EVENT(self.context, [@"encrypt" UTF8String], [content UTF8String]);
+        DISPATCH_STATUS_EVENT(context, [@"encrypt" UTF8String], [content UTF8String]);
     }
     
     return NULL;
@@ -229,7 +225,7 @@
     FREResult ret = [_converter FREObject2NString:text toNString:&value];
     if (ret == FRE_OK) {
         NSString *content = [AESEncrypt decrypt:value key:kEncryptKey];
-        DISPATCH_STATUS_EVENT(self.context, [@"decrypt" UTF8String], [content UTF8String]);
+        DISPATCH_STATUS_EVENT(context, [@"decrypt" UTF8String], [content UTF8String]);
     }
     
     return NULL;
@@ -254,7 +250,7 @@
         [[SharedManager sharedManager] sharedData:model finish:^(NSInteger statusCode, id resp) {
             //
             NSString *strstatusCode = [NSString stringWithFormat:@"%ld",(long)statusCode];
-            DISPATCH_STATUS_EVENT(self.context, [@"shareCallback" UTF8String], [strstatusCode UTF8String]);
+            DISPATCH_STATUS_EVENT(context, [@"shareCallback" UTF8String], [strstatusCode UTF8String]);
         }];
     }
     
@@ -271,7 +267,7 @@
             
             NSString *message = [nickname stringByAppendingFormat:@"###%@",unionid];
             
-            DISPATCH_STATUS_EVENT(self.context,[@"login_function_wx" UTF8String],[message UTF8String]);
+            DISPATCH_STATUS_EVENT(context,[@"login_function_wx" UTF8String],[message UTF8String]);
             
         }
         
@@ -282,14 +278,14 @@
 - (FREObject)loginByQQ {
 //    id delegate = [UIApplication sharedApplication].delegate;
 //    NSString *appName = NSStringFromClass([delegate class]);
-//    DISPATCH_STATUS_EVENT(self.context,[@"login_function_qq" UTF8String],[appName UTF8String]);
+    DISPATCH_STATUS_EVENT(context,[@"login_function_qq" UTF8String],[@"33333" UTF8String]);
     
     [[SharedManager sharedManager] loginByQQ:^(NSInteger statusCode, id resp) {
         //
         if ([resp isKindOfClass:[NSString class]]) {
             NSString *openId = resp;
             NSString *message = [openId stringByAppendingFormat:@"###%@",openId];
-            DISPATCH_STATUS_EVENT(self.context,[@"login_function_qq" UTF8String],[message UTF8String]);
+            DISPATCH_STATUS_EVENT(context,[@"login_function_qq" UTF8String],[message UTF8String]);
         }
 
     }];
@@ -323,7 +319,7 @@
         }
     }
     
-    DISPATCH_STATUS_EVENT(self.context, [@"play" UTF8String], [@"play" UTF8String]);
+    DISPATCH_STATUS_EVENT(context, [@"play" UTF8String], [@"play" UTF8String]);
     return NULL;
 }
 

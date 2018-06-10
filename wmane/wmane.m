@@ -39,10 +39,7 @@
  */
 
 #import "wmane.h"
-#import "ANEExtensionFunc.h"
 
-
-ANEExtensionFunc *globalANEExFuc;
 
 /* wmaneExtInitializer()
  * The extension initializer is called the first time the ActionScript side of the extension
@@ -107,6 +104,7 @@ void ContextInitializer(void* extData, const uint8_t* ctxType, FREContext ctx, u
     *numFunctionsToTest = sizeof(func) / sizeof(FRENamedFunction);
     *functionsToSet = func;
     
+    context = ctx;
     globalANEExFuc = [[ANEExtensionFunc alloc] initWithContext:ctx];
 }
 
@@ -118,7 +116,6 @@ void ContextInitializer(void* extData, const uint8_t* ctxType, FREContext ctx, u
 void ContextFinalizer(FREContext ctx) 
 {
     NSLog(@"Entering ContextFinalizer()");
-
     // Nothing to clean up.
     NSLog(@"Exiting ContextFinalizer()");
     return;

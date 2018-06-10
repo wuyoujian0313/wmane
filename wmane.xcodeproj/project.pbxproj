@@ -24,14 +24,8 @@
 		AF914F6E20075B82006CDBCA /* WXPayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AF914F6C20075B82006CDBCA /* WXPayManager.m */; };
 		AF914F7120075E81006CDBCA /* ANEExtensionFunc.h in Headers */ = {isa = PBXBuildFile; fileRef = AF914F6F20075E80006CDBCA /* ANEExtensionFunc.h */; };
 		AF914F7220075E81006CDBCA /* ANEExtensionFunc.m in Sources */ = {isa = PBXBuildFile; fileRef = AF914F7020075E81006CDBCA /* ANEExtensionFunc.m */; };
-		AF914F7520076559006CDBCA /* APOrderInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = AF914F7320076558006CDBCA /* APOrderInfo.h */; };
-		AF914F7620076559006CDBCA /* APOrderInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = AF914F7420076558006CDBCA /* APOrderInfo.m */; };
 		AFAC00B220B866CD005530D2 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFAC00B120B866CD005530D2 /* MediaPlayer.framework */; };
 		AFAC00B420B866D7005530D2 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFAC00B320B866D7005530D2 /* AVKit.framework */; };
-		AFC3306D2009F60100E16EAC /* GetRSARequest.h in Headers */ = {isa = PBXBuildFile; fileRef = AFC3306B2009F60100E16EAC /* GetRSARequest.h */; };
-		AFC3306E2009F60100E16EAC /* GetRSARequest.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC3306C2009F60100E16EAC /* GetRSARequest.m */; };
-		AFD5C80C20B90E78003809A6 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AFD5C80A20B90E77003809A6 /* libcrypto.a */; };
-		AFD5C80D20B90E78003809A6 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AFD5C80B20B90E78003809A6 /* libssl.a */; };
 		AFD5C81020B96278003809A6 /* AIAppHook2Pay.h in Headers */ = {isa = PBXBuildFile; fileRef = AFD5C80E20B96278003809A6 /* AIAppHook2Pay.h */; };
 		AFD5C81120B96278003809A6 /* AIAppHook2Pay.m in Sources */ = {isa = PBXBuildFile; fileRef = AFD5C80F20B96278003809A6 /* AIAppHook2Pay.m */; };
 		AFE6AB48201CD36100A2A03D /* NSData+Crypto.m in Sources */ = {isa = PBXBuildFile; fileRef = AFE6AB46201CD36000A2A03D /* NSData+Crypto.m */; };
@@ -55,10 +49,6 @@
 		AFF350492005B51300807E17 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFF350482005B51300807E17 /* Security.framework */; };
 		AFF350582005B51300807E17 /* wmane.h in Headers */ = {isa = PBXBuildFile; fileRef = AFF350572005B51300807E17 /* wmane.h */; };
 		AFF3505A2005B51300807E17 /* wmane.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF350592005B51300807E17 /* wmane.m */; };
-		AFF3510E2005C2A700807E17 /* APRSASigner.h in Headers */ = {isa = PBXBuildFile; fileRef = AFF350BC2005C2A700807E17 /* APRSASigner.h */; };
-		AFF3510F2005C2A700807E17 /* APRSASigner.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF350BD2005C2A700807E17 /* APRSASigner.m */; };
-		AFF351102005C2A700807E17 /* openssl_wrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = AFF350BE2005C2A700807E17 /* openssl_wrapper.h */; };
-		AFF351112005C2A700807E17 /* openssl_wrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF350BF2005C2A700807E17 /* openssl_wrapper.m */; };
 		AFF351192005F07D00807E17 /* ANETypeConversion.h in Headers */ = {isa = PBXBuildFile; fileRef = AFF351152005F07D00807E17 /* ANETypeConversion.h */; };
 		AFF3511A2005F07D00807E17 /* ANETypeConversion.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF351162005F07D00807E17 /* ANETypeConversion.m */; };
 		AFF3511C2005F67800807E17 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFF3511B2005F67700807E17 /* CoreMotion.framework */; };
@@ -99,12 +89,8 @@
 		AF914F6C20075B82006CDBCA /* WXPayManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WXPayManager.m; sourceTree = "<group>"; };
 		AF914F6F20075E80006CDBCA /* ANEExtensionFunc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANEExtensionFunc.h; sourceTree = "<group>"; };
 		AF914F7020075E81006CDBCA /* ANEExtensionFunc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANEExtensionFunc.m; sourceTree = "<group>"; };
-		AF914F7320076558006CDBCA /* APOrderInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APOrderInfo.h; sourceTree = "<group>"; };
-		AF914F7420076558006CDBCA /* APOrderInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APOrderInfo.m; sourceTree = "<group>"; };
 		AFAC00B120B866CD005530D2 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		AFAC00B320B866D7005530D2 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
-		AFC3306B2009F60100E16EAC /* GetRSARequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GetRSARequest.h; sourceTree = "<group>"; };
-		AFC3306C2009F60100E16EAC /* GetRSARequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetRSARequest.m; sourceTree = "<group>"; };
 		AFD5C80A20B90E77003809A6 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = wmane/alipay/libcrypto.a; sourceTree = "<group>"; };
 		AFD5C80B20B90E78003809A6 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = wmane/alipay/libssl.a; sourceTree = "<group>"; };
 		AFD5C80E20B96278003809A6 /* AIAppHook2Pay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIAppHook2Pay.h; sourceTree = "<group>"; };
@@ -138,10 +124,6 @@
 		AFF3505D2005B51300807E17 /* generateANE.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = generateANE.sh; sourceTree = "<group>"; };
 		AFF3505E2005B51300807E17 /* debugIPA.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = debugIPA.sh; sourceTree = "<group>"; };
 		AFF3506B2005C2A700807E17 /* AlipaySDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AlipaySDK.bundle; sourceTree = "<group>"; };
-		AFF350BC2005C2A700807E17 /* APRSASigner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APRSASigner.h; sourceTree = "<group>"; };
-		AFF350BD2005C2A700807E17 /* APRSASigner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APRSASigner.m; sourceTree = "<group>"; };
-		AFF350BE2005C2A700807E17 /* openssl_wrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = openssl_wrapper.h; sourceTree = "<group>"; };
-		AFF350BF2005C2A700807E17 /* openssl_wrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = openssl_wrapper.m; sourceTree = "<group>"; };
 		AFF351152005F07D00807E17 /* ANETypeConversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANETypeConversion.h; sourceTree = "<group>"; };
 		AFF351162005F07D00807E17 /* ANETypeConversion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANETypeConversion.m; sourceTree = "<group>"; };
 		AFF3511B2005F67700807E17 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
@@ -157,8 +139,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFD5C80C20B90E78003809A6 /* libcrypto.a in Frameworks */,
-				AFD5C80D20B90E78003809A6 /* libssl.a in Frameworks */,
 				AFAC00B420B866D7005530D2 /* AVKit.framework in Frameworks */,
 				AFAC00B220B866CD005530D2 /* MediaPlayer.framework in Frameworks */,
 				AFF351202005F69400807E17 /* CoreText.framework in Frameworks */,
@@ -296,11 +276,7 @@
 				AF914F6C20075B82006CDBCA /* WXPayManager.m */,
 				AF914F6F20075E80006CDBCA /* ANEExtensionFunc.h */,
 				AF914F7020075E81006CDBCA /* ANEExtensionFunc.m */,
-				AF914F7320076558006CDBCA /* APOrderInfo.h */,
-				AF914F7420076558006CDBCA /* APOrderInfo.m */,
 				AF0E8B452009DC05002795C7 /* PayConstant.h */,
-				AFC3306B2009F60100E16EAC /* GetRSARequest.h */,
-				AFC3306C2009F60100E16EAC /* GetRSARequest.m */,
 				AFD5C80E20B96278003809A6 /* AIAppHook2Pay.h */,
 				AFD5C80F20B96278003809A6 /* AIAppHook2Pay.m */,
 				AFF350552005B51300807E17 /* Supporting Files */,
@@ -335,10 +311,6 @@
 			children = (
 				AFE6AB47201CD36100A2A03D /* NSData+Crypto.h */,
 				AFE6AB46201CD36000A2A03D /* NSData+Crypto.m */,
-				AFF350BC2005C2A700807E17 /* APRSASigner.h */,
-				AFF350BD2005C2A700807E17 /* APRSASigner.m */,
-				AFF350BE2005C2A700807E17 /* openssl_wrapper.h */,
-				AFF350BF2005C2A700807E17 /* openssl_wrapper.m */,
 				AFE6AB4A201CD62700A2A03D /* AESEncrypt.h */,
 				AFE6AB4B201CD62700A2A03D /* AESEncrypt.m */,
 			);
@@ -368,13 +340,9 @@
 				AF760E34200B460400F869B1 /* SharedDataModel.h in Headers */,
 				AFF351192005F07D00807E17 /* ANETypeConversion.h in Headers */,
 				AFE6AB49201CD36100A2A03D /* NSData+Crypto.h in Headers */,
-				AFC3306D2009F60100E16EAC /* GetRSARequest.h in Headers */,
-				AFF3510E2005C2A700807E17 /* APRSASigner.h in Headers */,
 				AF4010DE20066BEC00A4D004 /* WXApi.h in Headers */,
-				AF914F7520076559006CDBCA /* APOrderInfo.h in Headers */,
 				AF4010DF20066BEC00A4D004 /* WXApiObject.h in Headers */,
 				AFE6AB4C201CD62700A2A03D /* AESEncrypt.h in Headers */,
-				AFF351102005C2A700807E17 /* openssl_wrapper.h in Headers */,
 				AFF350582005B51300807E17 /* wmane.h in Headers */,
 				AF4010DD20066BEC00A4D004 /* WechatAuthSDK.h in Headers */,
 				AF914F7120075E81006CDBCA /* ANEExtensionFunc.h in Headers */,
@@ -477,18 +445,14 @@
 			files = (
 				AFF3511A2005F07D00807E17 /* ANETypeConversion.m in Sources */,
 				AFE6AB48201CD36100A2A03D /* NSData+Crypto.m in Sources */,
-				AF914F7620076559006CDBCA /* APOrderInfo.m in Sources */,
 				AFE6AB4D201CD62700A2A03D /* AESEncrypt.m in Sources */,
 				AFD5C81120B96278003809A6 /* AIAppHook2Pay.m in Sources */,
 				AF914F6E20075B82006CDBCA /* WXPayManager.m in Sources */,
-				AFC3306E2009F60100E16EAC /* GetRSARequest.m in Sources */,
 				AF760E2F200B460400F869B1 /* AIActionSheet.m in Sources */,
 				AFF3505A2005B51300807E17 /* wmane.m in Sources */,
-				AFF3510F2005C2A700807E17 /* APRSASigner.m in Sources */,
 				AF760E35200B460400F869B1 /* SharedDataModel.m in Sources */,
 				AF914F6A20075B61006CDBCA /* AliPayManager.m in Sources */,
 				AF914F7220075E81006CDBCA /* ANEExtensionFunc.m in Sources */,
-				AFF351112005C2A700807E17 /* openssl_wrapper.m in Sources */,
 				AF760E37200B460400F869B1 /* SharedManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -566,7 +530,7 @@
 				DSTROOT = /tmp/wmane.dst;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/wmane/alipay",
+					"$(PROJECT_DIR)/wmane/alipay/**",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/wmane/QQSDK",
 				);
@@ -577,16 +541,17 @@
 				GCC_VERSION = "";
 				HEADER_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/wmane/alipay",
-					"$(PROJECT_DIR)/wmane/alipay/openssl",
+					"$(PROJECT_DIR)/wmane/alipay/openssl/**",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/wmane/alipay",
+					"$(PROJECT_DIR)/wmane/alipay/**",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/wmane/WechatSDK1.8.2",
 				);
 				OTHER_LDFLAGS = (
+					"-load-all",
 					"-Objc",
 					"-lz",
 				);
@@ -608,7 +573,7 @@
 				DSTROOT = /tmp/wmane.dst;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/wmane/alipay",
+					"$(PROJECT_DIR)/wmane/alipay/**",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/wmane/QQSDK",
 				);
@@ -619,16 +584,17 @@
 				GCC_VERSION = "";
 				HEADER_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/wmane/alipay",
-					"$(PROJECT_DIR)/wmane/alipay/openssl",
+					"$(PROJECT_DIR)/wmane/alipay/openssl/**",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/wmane/alipay",
+					"$(PROJECT_DIR)/wmane/alipay/**",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/wmane/WechatSDK1.8.2",
 				);
 				OTHER_LDFLAGS = (
+					"-load-all",
 					"-Objc",
 					"-lz",
 				);

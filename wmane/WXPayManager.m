@@ -6,7 +6,6 @@
 //
 
 #import "WXPayManager.h"
-#import "GetRSARequest.h"
 #import "WechatSDK1.8.2/WXApi.h"
 
 @interface WXPayManager ()<WXApiDelegate>
@@ -140,16 +139,7 @@
 - (void)pay:(NSString *)payJson completion:(PayCompletionBlock)block {
     _payFinishBlock = block;
     _payJson = payJson;
-    
-    GetRSARequest *request = [[GetRSARequest alloc] init];
-    request.appId = _appId;
-    
-    __weak WXPayManager *wSelf = self;
-    [request getRSAKeyFinishBlock:^(NSString *rsaKey) {
-        //
-        WXPayManager *sSelf = wSelf;
-        [sSelf toPay];
-    }];
+    [self toPay];
 }
 
 @end

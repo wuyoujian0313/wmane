@@ -39,6 +39,10 @@
 
 #import <Foundation/Foundation.h>
 #import "FlashRuntimeExtensions.h"
+#import "ANEExtensionFunc.h"
+
+FREContext context;
+ANEExtensionFunc *globalANEExFuc;
 
 #define ANE_FUNCTION(f) FREObject (f)(FREContext ctx, void *data, uint32_t argc, FREObject argv[])
 #define MAP_FUNCTION(f, data) { (const uint8_t*)(#f), (data), &(f) }

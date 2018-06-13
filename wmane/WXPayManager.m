@@ -6,7 +6,7 @@
 //
 
 #import "WXPayManager.h"
-#import "WechatSDK1.8.2/WXApi.h"
+#import "WXApi.h"
 
 @interface WXPayManager ()<WXApiDelegate>
 @property (nonatomic, copy) NSString *appId;
@@ -32,7 +32,7 @@
     _appSecret = appSecret;
     _partner = partner;
     
-    [WXApi registerApp:_appId enableMTA:NO];
+    [WXApi registerApp:_appId];
 }
 
 - (void)handleOpenURL:(NSURL *)url {

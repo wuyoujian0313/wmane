@@ -70,7 +70,6 @@
 /* Begin PBXFileReference section */
 		AF0E8B452009DC05002795C7 /* PayConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PayConstant.h; sourceTree = "<group>"; };
 		AF4010D720066BEC00A4D004 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
-		AF4010D820066BEC00A4D004 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		AF4010D920066BEC00A4D004 /* WechatAuthSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
 		AF4010DA20066BEC00A4D004 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
 		AF4010DB20066BEC00A4D004 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
@@ -91,8 +90,6 @@
 		AF914F7020075E81006CDBCA /* ANEExtensionFunc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANEExtensionFunc.m; sourceTree = "<group>"; };
 		AFAC00B120B866CD005530D2 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		AFAC00B320B866D7005530D2 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
-		AFD5C80A20B90E77003809A6 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = wmane/alipay/libcrypto.a; sourceTree = "<group>"; };
-		AFD5C80B20B90E78003809A6 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = wmane/alipay/libssl.a; sourceTree = "<group>"; };
 		AFD5C80E20B96278003809A6 /* AIAppHook2Pay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIAppHook2Pay.h; sourceTree = "<group>"; };
 		AFD5C80F20B96278003809A6 /* AIAppHook2Pay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIAppHook2Pay.m; sourceTree = "<group>"; };
 		AFE6AB46201CD36000A2A03D /* NSData+Crypto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Crypto.m"; sourceTree = "<group>"; };
@@ -172,7 +169,6 @@
 			isa = PBXGroup;
 			children = (
 				AF4010D720066BEC00A4D004 /* libWeChatSDK.a */,
-				AF4010D820066BEC00A4D004 /* README.txt */,
 				AF4010D920066BEC00A4D004 /* WechatAuthSDK.h */,
 				AF4010DA20066BEC00A4D004 /* WXApi.h */,
 				AF4010DB20066BEC00A4D004 /* WXApiObject.h */,
@@ -232,8 +228,6 @@
 		AFF3502B2005B51300807E17 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AFD5C80A20B90E77003809A6 /* libcrypto.a */,
-				AFD5C80B20B90E78003809A6 /* libssl.a */,
 				AFAC00B320B866D7005530D2 /* AVKit.framework */,
 				AFAC00B120B866CD005530D2 /* MediaPlayer.framework */,
 				AFF351232005F6AD00807E17 /* libc++.tbd */,
@@ -521,12 +515,14 @@
 		AFF350622005B51300807E17 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7DUX67X748;
+				DEFINES_MODULE = YES;
+				DEPLOYMENT_POSTPROCESSING = NO;
+				DEVELOPMENT_TEAM = "";
 				DSTROOT = /tmp/wmane.dst;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -534,7 +530,7 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/wmane/QQSDK",
 				);
-				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_CPP_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "wmane/wmane-Prefix.pch";
@@ -543,20 +539,26 @@
 					"$(PROJECT_DIR)/wmane/alipay",
 					"$(PROJECT_DIR)/wmane/alipay/openssl/**",
 				);
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/wmane/alipay/**",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/wmane/WechatSDK1.8.2",
+					"$(PROJECT_DIR)/wmane",
 				);
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ORDER_FILE = "";
+				OTHER_CFLAGS = "-fembed-bitcode";
 				OTHER_LDFLAGS = (
-					"-load-all",
-					"-Objc",
-					"-lz",
+					"-ObjC",
+					"-all_load",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "/Applications/Adobe\\ Animate\\ CC\\ 2018/AIR26.0/include";
 			};
 			name = Debug;
@@ -564,12 +566,14 @@
 		AFF350632005B51300807E17 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7DUX67X748;
+				DEFINES_MODULE = YES;
+				DEPLOYMENT_POSTPROCESSING = NO;
+				DEVELOPMENT_TEAM = "";
 				DSTROOT = /tmp/wmane.dst;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -577,7 +581,7 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/wmane/QQSDK",
 				);
-				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_CPP_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "wmane/wmane-Prefix.pch";
@@ -586,20 +590,26 @@
 					"$(PROJECT_DIR)/wmane/alipay",
 					"$(PROJECT_DIR)/wmane/alipay/openssl/**",
 				);
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/wmane/alipay/**",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/wmane/WechatSDK1.8.2",
+					"$(PROJECT_DIR)/wmane",
 				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ORDER_FILE = "";
+				OTHER_CFLAGS = "-fembed-bitcode";
 				OTHER_LDFLAGS = (
-					"-load-all",
-					"-Objc",
-					"-lz",
+					"-ObjC",
+					"-all_load",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "/Applications/Adobe\\ Animate\\ CC\\ 2018/AIR26.0/include";
 			};
 			name = Release;
